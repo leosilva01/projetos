@@ -1,0 +1,570 @@
+@font-face {
+	font-family: 'AzoSans';
+	src: url('../fonts/Harabara Mais Demo.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-R.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'SF-Regular';
+	src: url('../fonts/SF-UI-Display-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'SF-Thin';
+	src: url('../fonts/SF-UI-Display-Thin.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/Proxima Nova Semibold.otf') format('opentype');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#logo {
+	color: rgba(255,255,255,0.1);
+    line-height: 160%;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 40px;
+    color: white;
+	position: absolute;
+	margin: 10px 0px 0px -47%;
+}
+
+#signin-span {
+	position: absolute;
+	margin: -3% 0px 0px 31%;
+}
+
+#signup-span {
+	position: absolute;
+	margin: -3% 0px 0px 38%;
+}
+
+#signin-bt {
+    background-color: transparent;
+    color: rgba(255,255,255,1);
+    border-radius: 100px; 
+    -moz-border-radius: 100px; 
+    -webkit-border-radius: 100px; 
+    border: 0px solid #800000;
+    padding: 7px 20px;
+    font-family: SF-Regular;
+    font-size: 15px;
+}
+
+#signup-bt {
+    background-color: #0084fd;
+    color: rgba(255,255,255,1);
+    border-radius: 100px; 
+    -moz-border-radius: 100px; 
+    -webkit-border-radius: 100px; 
+    border: 0px solid #800000;
+    padding: 7px 20px;
+    font-family: SF-Regular;
+    font-size: 15px;
+}
+
+#signup-bt:hover {
+    background-color: #136CE4;
+}
+
+#nav-bt:hover{
+	text-decoration: none;
+}
+
+#footer-span-twitter {
+	position: absolute;
+	margin: -4% 0px 0px 34%;
+}
+
+#footer-span-facebook {
+	position: absolute;
+	margin: -4% 0px 0px 31%;
+}
+
+#footer-span-top {
+	position: absolute;
+	margin: -4% 0px 0px 37%;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	width: 100%;
+	height: 200px;
+	background: #ccc;
+	position: relative;
+}
+
+nav {
+	width: 100%;
+	height: 100px;
+	background: #999;
+	z-index:1;
+	position: relative;
+}
+
+footer {
+	width: 100%;
+	height: 90px;
+	background: #22313F;
+	position: absolute;
+    bottom: 0;
+    opacity: 0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.footer-tr {
+	padding-top: 100px
+	vertical-align: bottom;
+}
+
+.dashboard-footer {
+
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+
+}
+
+.dashboard-footer p {
+
+font-family: 'SF-Regular', sans-serif;
+font-size: 12px;
+color: #ECECEC;
+
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  /* box-shadow: 0 2px 0 #e4e4e4; */
+  font-family: "AvenirLTStd-Black";
+  transition: .2s all linear
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: SF-Regular;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #FFF;
+    color: black;
+}
+
+.button2 {
+    background-color: #663399;
+    color: white;
+    border-radius: 50px; 
+    -moz-border-radius: 50px; 
+    -webkit-border-radius: 50px; 
+    border: 0px solid #800000;
+    padding: 16px 32px;
+    font-family: SF-Regular;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button2:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Option 1 - Display Inline */
+  .nav-bar li {
+    display: inline-block;
+    margin-right: 24px;
+  }
+
+  .nav-bar ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav-bar li {
+  font-family: 'SF-Regular', sans-serif;
+  font-size: 1.0em;
+  line-height: 40px;
+  height: 40px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.nav-bar a {
+text-decoration: none;
+color: white;
+}
+
+.nav-bar a:hover {
+ border-bottom: 3px solid #FFF;
+ text-decoration: none;
+ color: white;
+}
+
+.nav-bar a:visited {
+text-decoration: none;
+color: white;
+}
+
+.nav-bar a:active {
+ border-bottom: 3px solid #FFF;
+ text-decoration: none;
+ color: white;
+}
+
+/* PRICE TABLE ----------------- */
+
+.sm-pricing {
+    background-color: #f6f8fb;
+    padding: 160px 0 125px
+}
+@media (max-width: 740px) {
+    .sm-pricing {
+        padding: 115px 0 0
+    }
+}
+.sm-pricing__container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px
+}
+.sm-pricing__title {
+    font-family: azo-sans-web, sans-serif;
+    font-size: 56px;
+    line-height: 66px;
+    font-weight: 700;
+    color: #586178;
+    text-align: center
+}
+.sm-pricing__subtitle {
+    text-align: center;
+    font-size: 18px
+}
+.sm-pricing__plans {
+    margin: 70px auto 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    max-width: 720px
+}
+@media (max-width: 740px) {
+    .sm-pricing__plans {
+        display: block;
+        margin-top: 40px
+    }
+    .sm-pricing__plans:after {
+        content: "";
+        display: table;
+        width: 100%
+    }
+}
+.sm-pricing__plan {
+    background-color: #fff;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    border-right: 2px solid #d8d8e4
+}
+@media (max-width: 740px) {
+    .sm-pricing__plan {
+        display: block;
+        margin-bottom: 20px;
+        border-right: none
+    }
+}
+.sm-pricing__plan_first {
+    border-radius: 12px 0 0 12px
+}
+.sm-pricing__plan_last {
+    border-right: none;
+    border-radius: 0 12px 12px 0
+}
+@media (max-width: 740px) {
+    .sm-pricing__plan {
+        border-radius: 6px
+    }
+}
+.sm-pricing__plan-title {
+    height: 100px;
+    background-color: #e6e6ed;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #8390a1;
+    text-transform: uppercase;
+    background-position: 50% 20px;
+    background-repeat: no-repeat
+}
+@media (min-width: 741px) {
+    .sm-pricing__plan_border-left {
+        border-left: 1px solid #c7c7d9
+    }
+    .sm-pricing__plan_border-right {
+        border-right: 1px solid #c7c7d9
+    }
+    .sm-pricing__plan-title {
+        padding-top: 90px
+    }
+    .sm-pricing__plan-title_first {
+        border-radius: 0 0 0 0
+    }
+    .sm-pricing__plan-title_last {
+        border-radius: 0 0 0 0
+    }
+    .sm-pricing__plan-title_starter {
+        background-image: url(../img/cat-sleep-icon.png);
+        background-size: 60px 53px
+    }
+    .sm-pricing__plan-title_pro {
+        background-image: url(../img/cat-drunk-icon.png);
+        background-size: 60px 58px
+    }
+    .sm-pricing__plan-title_business {
+        background-image: url(/wp-content/themes/base/assets/images/plan-business.png);
+        background-size: 60px 59px
+    }
+    .sm-pricing__plan-title_enterprise {
+        background-image: url(/wp-content/themes/base/assets/images/plan-enterprise.png);
+        background-size: 60px 61px
+    }
+}
+@media (min-width: 741px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 741px) and (-webkit-min-device-pixel-ratio: 3),
+(min-width: 741px) and (-webkit-min-device-pixel-ratio: 4) {
+    .sm-pricing__plan-title_starter {
+        background-image: url(/wp-content/themes/base/assets/images/plan-starter@2x.png)
+    }
+    .sm-pricing__plan-title_pro {
+        background-image: url(/wp-content/themes/base/assets/images/plan-pro@2x.png)
+    }
+    .sm-pricing__plan-title_business {
+        background-image: url(/wp-content/themes/base/assets/images/plan-business@2x.png)
+    }
+    .sm-pricing__plan-title_enterprise {
+        background-image: url(/wp-content/themes/base/assets/images/plan-enterprise@2x.png)
+    }
+}
+@media (max-width: 740px) {
+    .sm-pricing__plan-title {
+        min-height: 60px;
+        padding: 10px 0;
+        height: auto;
+        border-radius: 6px 6px 0 0
+    }
+}
+.sm-pricing__plan-for {
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px
+}
+.sm-pricing__plan-price {
+    margin-top: 20px;
+    font-size: 13px;
+    display: block
+}
+.-annual .sm-pricing__plan-price.-monthly,
+.sm-pricing__plan-price.-annual {
+    display: none
+}
+.-annual .sm-pricing__plan-price.-annual {
+    display: block
+}
+.sm-pricing__plan-price-switcher {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 32px;
+    height: 16px;
+    border-radius: 8px;
+    background: #8390a1;
+    position: relative
+}
+.-annual .sm-pricing__plan-price-switcher {
+    background: #71c44e
+}
+.sm-pricing__plan-price-switcher:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #f5f6f8;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: all .3s ease
+}
+.-annual .sm-pricing__plan-price-switcher:after {
+    left: 17px
+}
+.sm-pricing__plan-price-value {
+    font-family: azo-sans-web, sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700
+}
+.sm-pricing__plan-price-value_nodigit {
+    font-size: 30px
+}
+.sm-pricing__plan-short-descr {
+    line-height: 20px;
+    margin: 10px 0;
+    display: block;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none
+}
+.sm-pricing__plan-short-descr.-interactive {
+    cursor: pointer
+}
+.sm-pricing__plan-cta {
+    margin: 10px 0;
+    background-color: #0084fd;
+    padding: 7px 20px;
+    color: #fff;
+    border-radius: 100px;
+    display: inline-block
+}
+.-annual .sm-pricing__plan-cta.-monthly,
+.sm-pricing__plan-cta.-annual {
+    display: none
+}
+.-annual .sm-pricing__plan-cta.-annual {
+    display: inline-block
+}
+.sm-pricing__plan-cta:hover {
+    color: #fff;
+    background-color: #136CE4
+}
+.sm-pricing__plan-benefits {
+    color: #454649;
+    margin: 15px 20px 0;
+    line-height: 22px;
+    text-align: left
+}
+.block-fullwidth_centered,
+.sm-plans {
+    text-align: center
+}
+@media (min-width: 741px) {
+    .sm-pricing__plan-benefits {
+        display: block!important
+    }
+}
+.sm-pricing__plan-benefits-item {
+    padding: 6px 0 6px 25px;
+    border-top: 1px solid #e6e6ed;
+    position: relative
+}
+.sm-pricing__plan-benefits-item:before {
+    content: "";
+    float: left;
+    margin: 5px 0 0 -20px;
+    width: 12px;
+    height: 12px;
+    background: url(../img/check.svg) center no-repeat
+}
+.sm-pricing__plan-benefits-item_empty:before {
+    display: none
+}
+.sm-pricing__plan-benefits-item_with-subitems {
+    line-height: 20px
+}
+.sm-pricing__plan-benefits-subitems-title {
+    margin-bottom: 5px;
+    font-weight: 700;
+    line-height: 20px
+}
+.sm-pricing__plan-benefits-subitems-title_highlighted {
+    font-weight: 700
+}
+.sm-pricing__plan-benefits-subitem {
+    line-height: 20px;
+    padding-left: 5px;
+    position: relative
+}
+.sm-pricing__plan-benefits-item span:hover,
+.sm-pricing__plan-benefits-subitem span:hover {
+    cursor: help;
+    border-bottom: 1px dotted grey
+}
+.sm-pricing__plan-benefits-item span:hover+*,
+.sm-pricing__plan-benefits-subitem span:hover+* {
+    display: block
+}
+.sm-pricing__plan-benefits-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    background: #fff;
+    border: 1px solid grey;
+    left: 0;
+    width: 100%;
+    padding: 10px
+}
+.sm-pricing__plan-more {
+    padding: 10px 0 20px;
+    display: block;
+    color: #000
+}
+.block-fullwidth:after,
+.block-fullwidth__content:after {
+    display: table;
+    content: ""
+}
+.sm-pricing__plan-more-label {
+    border-bottom: 1px dotted #000
+}

@@ -1,0 +1,4941 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222
+}
+body {
+    font-size: 1em;
+    line-height: 1.4
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+img {
+    vertical-align: middle
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+textarea {
+    resize: vertical
+}
+.chromeframe {
+    margin: .2em 0;
+    background: #ccc;
+    color: #000;
+    padding: .2em 0
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+html,
+body {
+    height: 100%;
+    min-height: 100%
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "AvenirLTStd-Light", sans-serif
+}
+.wrap {
+    width: 940px;
+    padding: 0 20px;
+    position: relative;
+    margin: 0 auto
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal
+}
+.dynamicHeight {
+    height: 100%;
+    min-height: 100%
+}
+header {
+    height: 60px;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0 2px 0 #e4e4e4;
+    font-family: "AvenirLTStd-Black";
+    transition: .2s all linear
+}
+header .wrap {
+    width: 100%;
+    max-width: 1200px
+}
+header span {
+    margin: 11px 0 0 0;
+    float: left
+}
+header span a {
+    display: inline-block;
+    width: 158px;
+    height: 36px;
+    background: url("../img/logo-gray.svg") no-repeat;
+    text-indent: -99999em;
+    overflow: hidden
+}
+header nav {
+    float: right;
+    margin-top: 15px
+}
+header ul {
+    margin: 0;
+    padding: 0
+}
+header ul li {
+    display: inline;
+    margin-left: 16px
+}
+header ul li.lastItem {
+    margin-left: 4px
+}
+header ul li a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .75px;
+    text-decoration: none;
+    color: #323232;
+    transition: .2s all linear
+}
+header ul li a:hover,
+header ul li a.active {
+    color: #0583aa
+}
+header ul li a.signIn {
+    border-radius: 3px;
+    padding: 5px 14px;
+    border: 2px solid #323232
+}
+header ul li a.signIn:hover {
+    opacity: .5;
+    color: #323232
+}
+header ul li a.signUp {
+    border-radius: 3px;
+    padding: 7px 14px;
+    background: #0583aa;
+    transition: .2s background linear;
+    color: #FFF
+}
+header ul li a.signUp:hover {
+    background: #02627f;
+    opacity: 1;
+    color: #FFF
+}
+header.transparent {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0)
+}
+header.transparent span a {
+    background: url("../img/logo-white.svg") no-repeat
+}
+header.transparent ul li a {
+    color: #FFF
+}
+header.transparent ul li a:hover,
+header.transparent ul li a .active {
+    opacity: .6
+}
+header.transparent ul li a.active {
+    border-bottom: 2px solid #FFF;
+    padding-bottom: 4px
+}
+header.transparent ul li a.signIn {
+    border: 2px solid #FFF
+}
+header.transparent ul li a.signIn:hover {
+    color: #FFF
+}
+header.transparent ul li a.signUp:hover {
+    opacity: 1
+}
+header.subPageHeader {
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: inherit
+}
+header.subPageHeader span a {
+    background: url("../img/logo-white.svg") no-repeat
+}
+header.subPageHeader ul li a {
+    color: #FFF
+}
+header.subPageHeader ul li a:hover {
+    opacity: .6
+}
+header.subPageHeader ul li a.active {
+    border-bottom: 2px solid #FFF;
+    padding-bottom: 4px
+}
+header.subPageHeader ul li a.signIn {
+    border: 2px solid #FFF
+}
+header.subPageHeader ul li a.signIn:hover {
+    color: #FFF
+}
+header.subPageHeader ul li a.signUp:hover {
+    opacity: 1
+}
+.scrollButton {
+    cursor: pointer;
+    z-index: 1
+}
+.scrollButton.orangeCircle {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background: #d44200 url("../img/scrollarrow-white.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 20px;
+    background-position: center center;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    transition: .2s opacity linear
+}
+.scrollButton.orangeCircle:hover {
+    opacity: .5
+}
+.scrollButton.white,
+.scrollButton.orange {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    width: 30px;
+    height: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+.scrollButton.white {
+    background-image: url("../img/scrollarrow-white.svg")
+}
+.scrollButton.orange {
+    background-image: url("../img/scrollarrow-orange.svg")
+}
+.jobs-notice {
+    background: #031419;
+    text-align: center;
+    padding: 25px 0 20px 0
+}
+.jobs-notice span {
+    font-size: 18px;
+    font-family: "AvenirLTStd-Light";
+    color: #FFF
+}
+.jobs-notice span a {
+    text-decoration: none;
+    color: #0583aa
+}
+.jobs-notice span a:hover {
+    text-decoration: underline
+}
+footer {
+    border-top: 8px solid #000;
+    background: #0b303c;
+    padding: 40px 0
+}
+footer a {
+    text-decoration: none;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -ms-transition: .2s all linear;
+    transition: .2s all linear;
+    color: #FFF
+}
+footer a:hover {
+    opacity: .6
+}
+footer .footerLeft,
+footer .footerMiddle,
+footer .footerRight {
+    width: 33.3333%;
+    float: left
+}
+footer ul {
+    margin: 0;
+    padding: 0
+}
+footer ul li {
+    display: inline;
+    list-style-type: none
+}
+footer .footerWrap {
+    margin: 0 auto
+}
+footer .footerLeft {
+    color: #FFF;
+    font-size: 11px;
+    padding-top: 4px
+}
+footer .footerLeft a {
+    margin: 0 5px
+}
+footer .footerMiddle {
+    width: 85%
+}
+footer .footerMiddle li {
+    margin: 0 10px;
+    font-family: "AvenirLTStd-Heavy"
+}
+footer .footerMiddle a {
+    font-size: 11px;
+    text-transform: uppercase
+}
+footer .footerRight {
+    text-align: right;
+    width: 15%
+}
+footer .footerRight li {
+    margin-left: 15px
+}
+footer .footerRight li a {
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    background-image: url("../img/footerSprite.svg");
+    background-repeat: no-repeat;
+    text-indent: 999999em;
+    overflow: hidden
+}
+footer .footerRight li a.linkedin {
+    background-position: 0 0
+}
+footer .footerRight li a.facebook {
+    background-position: -34px 0
+}
+footer .footerRight li a.twitter {
+    background-position: -76px 0
+}
+footer .footerCopyright {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 11px;
+    color: #235362;
+    letter-spacing: 2px
+}
+footer.scrollFooter {
+    padding: 0 0 40px 0
+}
+footer.scrollFooter .jobs-notice {
+    padding: 20px 0 25px 0
+}
+footer.scrollFooter>.wrap {
+    padding: 40px 20px 0 20px
+}
+.subHeader {
+    height: 100px;
+    width: 100%;
+    background: #efefef;
+    transition: .2s all linear
+}
+.subHeader.clone {
+    display: none;
+    position: fixed;
+    top: 60px;
+    z-index: 7
+}
+.subHeader ul {
+    width: 100%;
+    max-width: 940px;
+    padding: 0 20px;
+    margin: 0 auto
+}
+.subHeader ul li {
+    transition: .2s all linear
+}
+.subHeader ul li:hover {
+    opacity: .6
+}
+.subHeader span {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 10px;
+    text-transform: uppercase
+}
+.subCtaButton {
+    font-family: "AvenirLTStd-Black";
+    display: block;
+    width: 100%;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 28px;
+    border-radius: 3px;
+    padding: 10px 0;
+    text-align: center;
+    background: #df4500;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -ms-transition: .2s all linear;
+    transition: .2s all linear;
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.3) inset;
+    letter-spacing: 2px
+}
+.subCtaButton:hover {
+    background: #9d3101
+}
+.scrollTop {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    bottom: 31px;
+    width: 30px;
+    height: 20px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 9
+}
+.scrollTop.orange {
+    background-image: url("../img/top-arrow-orange.svg")
+}
+.scrollTop.white {
+    background-image: url("../img/top-arrow-white.svg")
+}
+.logoSlider {
+    height: 40%;
+    position: relative
+}
+.logoSlider>.wrap {
+    border-bottom: 1px solid #e3e3e3;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    margin-top: -85px;
+    left: 50%;
+    margin-left: -470px;
+    padding: 25px 0
+}
+.logoSlider h3 {
+    margin: 0;
+    color: #777;
+    font-size: 16px;
+    font-family: "AvenirLTStd-Heavy";
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase
+}
+.logoSlider .logoBar {
+    width: 700px;
+    height: 70px;
+    margin: 25px auto 0 auto;
+    position: relative
+}
+.logoSlider .logoBar .logos {
+    width: 700px;
+    height: 70px;
+    overflow: hidden;
+    background: url("../img/content/applovin_advertisers/section-7/logobar.png") repeat-x;
+    transition: .4s all ease
+}
+.logoSlider .logoBar .arrow {
+    position: absolute;
+    top: 24px;
+    width: 20px;
+    height: 30px;
+    background: url("../img/slider-arrows.svg") no-repeat;
+    cursor: pointer;
+    opacity: .4;
+    transition: .2s all linear
+}
+.logoSlider .logoBar .arrow:hover {
+    opacity: .6
+}
+.logoSlider .logoBar .arrow.prev {
+    left: -15px
+}
+.logoSlider .logoBar .arrow.next {
+    right: -15px;
+    background-position: -93px 0
+}
+.animsition,
+.animsition-overlay {
+    position: relative;
+    opacity: 0;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    height: 100%;
+    min-height: 100%
+}
+.animsition-overlay-slide {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd
+}
+.animsition-loading,
+.animsition-loading:after {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: -16px;
+    border-radius: 50%;
+    z-index: 100
+}
+.animsition-loading {
+    background-color: transparent;
+    border-top: 3px solid rgba(5, 131, 170, 0.2);
+    border-right: 3px solid rgba(5, 131, 170, 0.2);
+    border-bottom: 3px solid rgba(5, 131, 170, 0.2);
+    border-left: 3px solid #0583aa;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-name: animsition-loading;
+    animation-name: animsition-loading
+}
+@-webkit-keyframes animsition-loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+@keyframes animsition-loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+.fade-in {
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in
+}
+@-webkit-keyframes fade-out {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes fade-out {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+.fade-out {
+    -webkit-animation-name: fade-out;
+    animation-name: fade-out
+}
+#home-1 {
+    background-image: url("../img/content/home/section-1/background.jpg");
+    overflow: initial
+}
+#home-2 {
+    background: #0583aa;
+    overflow: initial
+}
+#home-3 {
+    background-image: url("../img/content/home/section-3/background.jpg")
+}
+#home-4 {
+    background: #fff
+}
+#home-5 {
+    background-image: url("../img/content/home/section-5/background.jpg")
+}
+#home-6 {
+    background: #fff
+}
+#home-7 {
+    background-image: url("../img/content/home/section-7/background.jpg")
+}
+#home-8 {
+    background: #fff
+}
+.headerContent {
+    text-align: center;
+    width: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -260px;
+    margin-top: -120px
+}
+.headerContent h1 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 40px;
+    margin: 0 0 30px;
+    color: #FFF
+}
+.headerContent>p {
+    color: #FFF;
+    font-family: "AvenirLTStd-Light";
+    font-size: 24px;
+    margin: 0 0 30px 0;
+    line-height: 1.6em
+}
+.headerContent #video-link {
+    border: 2px solid #FFF;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #FFF;
+    display: inline-block;
+    margin: 0 auto;
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 10px 10px 10px 36px;
+    position: relative;
+    transition: .2s all ease;
+    cursor: pointer
+}
+.headerContent #video-link:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/play-icon-small.svg") no-repeat
+}
+.headerContent #video-link:hover {
+    opacity: .8
+}
+#jobs-break {
+    background: rgba(227, 89, 28, 0.5);
+    color: #FFF;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    font-size: 12px;
+    font-family: "AvenirLTStd-Medium";
+    border-radius: 3px 3px 0 0;
+    text-decoration: none;
+    transition: .2s background ease
+}
+#jobs-break:hover {
+    background: rgba(227, 89, 28, 0.7)
+}
+.scrollNote {
+    width: 220px;
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    bottom: 10px;
+    height: 52px;
+    text-align: center
+}
+.scrollNote .home-scroll-entry {
+    color: #d44200;
+    font-size: 13px;
+    font-family: "AvenirLTStd-Medium";
+    position: relative
+}
+.scrollNote .home-scroll-entry:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    bottom: -25px;
+    width: 22px;
+    height: 22px;
+    background: url("../img/scrollarrow-orange.svg") no-repeat center center;
+    background-size: 100%
+}
+.contentSmart {
+    color: #333
+}
+.contentSmart h2 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0
+}
+.contentSmart p {
+    font-family: "AvenirLTStd-Light";
+    font-size: 21px;
+    line-height: 1.4em;
+    margin: 0 0 50px 0
+}
+.contentSmart .yellowTag {
+    font-family: "HomemadeApplePro";
+    font-size: 18px;
+    display: inline-block;
+    height: 40px;
+    line-height: 44px
+}
+.contentSmart.dark {
+    color: #FFF
+}
+.contentSmart.dark .yellowTag {
+    color: #000
+}
+#home-3 .contentSmart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -80px;
+    padding: 0 0 0 50px
+}
+#home-3 .contentSmart:before,
+#home-3 .contentSmart:after {
+    content: "";
+    position: absolute
+}
+#home-3 .contentSmart:before {
+    background: url("../img/content/home/section-3/dashLine@2x.png") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 364px 294px;
+    width: 365px;
+    height: 294px;
+    left: 0;
+    bottom: -273px
+}
+#home-3 .contentSmart:after {
+    background: url("../img/content/home/dashStraight@2x.png") repeat-y;
+    height: 600px;
+    left: 0;
+    bottom: -856px;
+    width: 1px;
+    background-size: 1px 12px
+}
+#home-3 .contentSmart .yellowTag {
+    position: relative;
+    padding: 0 14px;
+    background: url("../img/content/home/section-3/yellowTag.svg") no-repeat left center
+}
+.bigMessage {
+    font-family: "AvenirLTStd-Black";
+    font-size: 36px;
+    color: #FFF;
+    background: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    height: 82px;
+    transition: .2s all ease;
+    overflow: hidden
+}
+.bigMessage:before {
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    left: 0;
+    right: 0;
+    line-height: 82px
+}
+#home-4 .contentSmart {
+    width: 900px;
+    height: 100%;
+    padding-top: 60px;
+    background: #fff url("../img/content/home/dashStraight@2x.png") repeat-y;
+    background-size: 1px 12px;
+    background-position: center center;
+    position: absolute
+}
+#home-4 .contentSmart .lineItem {
+    height: 580px;
+    position: relative;
+    top: 50%;
+    margin-top: -280px
+}
+#home-4 .contentSmart .lineItem>div {
+    display: inline-block;
+    width: 100%;
+    position: relative
+}
+#home-4 .contentSmart .lineItem img {
+    position: relative
+}
+#home-4 .contentSmart .left,
+#home-4 .contentSmart .right {
+    font-family: "HomemadeApplePro";
+    font-size: 20px;
+    position: relative;
+    display: block;
+    width: 50%
+}
+#home-4 .contentSmart .left:before,
+#home-4 .contentSmart .right:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    position: absolute;
+    top: 5px
+}
+#home-4 .contentSmart .left {
+    text-align: right;
+    padding-right: 25px;
+    float: left
+}
+#home-4 .contentSmart .left:before {
+    right: 0;
+    margin-right: -7px
+}
+#home-4 .contentSmart .right {
+    float: right;
+    padding-left: 25px
+}
+#home-4 .contentSmart .right:before {
+    left: 0;
+    margin-left: -6px
+}
+#home-4 .contentSmart .bigMessage {
+    left: 260px;
+    right: 260px;
+    top: 290px;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -ms-transition: .2s all linear;
+    transition: .2s all linear
+}
+#home-4 .contentSmart .bigMessage:before {
+    content: "REAL-TIME DATA"
+}
+#home-4 .contentSmart .bigMessage:hover {
+    left: 120px;
+    right: 120px
+}
+#home-4 .contentSmart .bigMessage:hover:before {
+    content: "TO DRIVE RELEVANT CONTENT"
+}
+#home-4 .contentSmart #lovesdawg,
+#home-4 .contentSmart #decorates {
+    height: 124px
+}
+#home-4 .contentSmart #lovesdawg>span {
+    top: 50px
+}
+#home-4 .contentSmart #dog {
+    float: left;
+    margin: 0 30px
+}
+#home-4 .contentSmart #collar {
+    top: 25px
+}
+#home-4 .contentSmart #decorates {
+    margin-top: -20px
+}
+#home-4 .contentSmart #decorates>span {
+    top: 90px
+}
+#home-4 .contentSmart #whiteroom {
+    margin-left: -250px;
+    left: 50%
+}
+#home-4 .contentSmart #shopping {
+    top: 165px;
+    height: 180px
+}
+#home-4 .contentSmart #shopping>span {
+    top: 120px
+}
+#home-4 .contentSmart #shoe {
+    top: 25px;
+    left: 50%;
+    position: absolute;
+    margin-left: -250px
+}
+#home-4 .contentSmart #clothes {
+    margin: 0 30px;
+    float: left;
+    top: 0
+}
+#home-5 .contentSmart {
+    margin-right: 49px;
+    padding-right: 50px;
+    height: 60%;
+    width: 374px;
+    position: absolute;
+    right: 50%;
+    bottom: 0
+}
+#home-5 .contentSmart:after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 256px;
+    background-image: url("../img/content/home/section-5/dashLine@2x.png");
+    background-repeat: no-repeat;
+    background-size: 151px 89px;
+    width: 151px;
+    height: 89px
+}
+#home-5 .contentSmart:before {
+    content: "";
+    position: absolute;
+    top: 339px;
+    right: -50px;
+    background-image: url("../img/content/home/dashStraight@2x.png");
+    background-repeat: repeat-y;
+    background-size: 1px 12px;
+    width: 1px;
+    height: 800px
+}
+#home-5 .contentSmart .yellowTag {
+    background: url("../img/content/home/section-5/yellowTag.svg") no-repeat left center;
+    padding: 0 16px
+}
+#home-6 .wrap {
+    background: url("../img/content/home/dashStraight@2x.png") repeat-y center center;
+    background-size: 1px 12px
+}
+#home-6 .contentSmart {
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    margin-top: -270px;
+    width: 900px;
+    left: 50%;
+    margin-left: -450px;
+    background: #fff url("../img/content/home/section-6/dashLine@2x.png") no-repeat center center;
+    background-size: 9px 600px
+}
+#home-6 .contentSmart>img {
+    position: absolute
+}
+#home-6 .bigMessage {
+    top: 280px;
+    left: 200px;
+    right: 200px
+}
+#home-6 .bigMessage:before {
+    content: "PREDICTIVE INSIGHTS"
+}
+#home-6 .bigMessage:hover {
+    left: 140px;
+    right: 140px
+}
+#home-6 .bigMessage:hover:before {
+    content: "FOR EFFECTIVE MARKETING"
+}
+#home-6 .bubbleText {
+    font-size: 18px;
+    color: #323232;
+    font-family: "HomemadeApplePro";
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    text-align: center
+}
+#home-6 .bubbleText.petSupply {
+    background-image: url("../img/content/home/section-6/petBubble.svg");
+    width: 285px;
+    height: 75px;
+    padding-top: 23px;
+    margin-left: 20px;
+    left: 50%;
+    top: 25px
+}
+#home-6 .bubbleText.artFrames {
+    background-image: url("../img/content/home/section-6/artBubble.svg");
+    width: 282px;
+    height: 80px;
+    padding: 23px 0 0 0;
+    margin-right: 20px;
+    right: 50%;
+    top: 158px
+}
+#home-6 .bubbleText.chair {
+    background-image: url("../img/content/home/section-6/chairBubble.svg");
+    width: 302px;
+    height: 100px;
+    padding-top: 20px;
+    left: 50%;
+    top: 394px;
+    margin-left: 20px
+}
+#home-6 #petSupply {
+    top: 30px;
+    right: 50%;
+    margin-right: 20px
+}
+#home-6 #homeDecor {
+    top: 110px;
+    left: 50%;
+    margin-left: 35px
+}
+#home-6 #chair {
+    top: 400px;
+    right: 50%;
+    margin-right: 30px
+}
+#home-7 .contentSmart {
+    margin-top: -100px;
+    padding-left: 50px;
+    height: 376px;
+    width: 425px;
+    left: 50%;
+    position: absolute;
+    top: 50%
+}
+#home-7 .contentSmart:before,
+#home-7 .contentSmart:after {
+    content: "";
+    position: absolute
+}
+#home-7 .contentSmart:before {
+    width: 365px;
+    height: 294px;
+    background: url("../img/content/home/section-7/dashLine@2x.png") no-repeat;
+    background-size: 365px 294px;
+    bottom: -118px;
+    left: 0
+}
+#home-7 .contentSmart:after {
+    height: 800px;
+    left: 0;
+    top: 492px;
+    background: url("../img/content/home/dashStraightWhite@2x.png") repeat-y;
+    background-size: 1px 12px;
+    width: 1px
+}
+#home-7 .yellowTag {
+    background: url("../img/content/home/section-7/yellowTag.svg") no-repeat left center;
+    padding: 0 14px 0 10px
+}
+#home-8 .endHomeSlide {
+    height: 72%
+}
+#home-8 .endHomeSlide .headline {
+    height: 50%;
+    background: url("../img/content/home/dashStraight@2x.png") repeat-y;
+    background-size: 1px 12px;
+    background-position: center center
+}
+#home-8 .endHomeSlide .headline .contentSmart {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0 60px 0
+}
+#home-8 .endHomeSlide .headline .contentSmart>span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase
+}
+#home-8 .endHomeSlide .headline .contentSmart .head {
+    font-family: "AvenirLTStd-Black";
+    font-size: 48px;
+    color: #222;
+    letter-spacing: 3px;
+    margin-bottom: 5px
+}
+#home-8 .endHomeSlide .headline .contentSmart .sub {
+    font-family: "AvenirLTStd-Light";
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 2px
+}
+#home-8 .endHomeSlide .ctaSection {
+    height: 50%
+}
+#home-8 .endHomeSlide .ctaSection>div {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-size: cover;
+    background-position: center center;
+    position: relative
+}
+#home-8 .endHomeSlide .ctaSection>div>div {
+    width: 266px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -45px 0 0 -133px
+}
+#home-8 .endHomeSlide .ctaSection>div>div span {
+    display: block;
+    color: #FFF;
+    font-family: "HomemadeApplePro";
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center
+}
+#home-8 .endHomeSlide .ctaSection .publishers {
+    background-image: url("../img/content/home/section-8/publishers.jpg")
+}
+#home-8 .endHomeSlide .ctaSection .developer {
+    background-image: url("../img/content/home/section-8/developers.jpg")
+}
+#home-8 .scrollFooter {
+    height: 28%
+}
+#advertisers-1 {
+    background-image: url("../img/content/applovin_advertisers/section-1/background.jpg")
+}
+#advertisers-2 {
+    background: #fff
+}
+#advertisers-3 {
+    background: #1684a8
+}
+#advertisers-4 {
+    background: #444
+}
+#advertisers-5 {
+    background: #1684a8
+}
+#advertisers-6 {
+    background: #fff
+}
+#advertisers-7 {
+    background: #fff
+}
+#advertisersSubHeader li {
+    width: 20%;
+    display: block;
+    height: 100px;
+    float: left
+}
+#advertisersSubHeader li span {
+    cursor: pointer;
+    height: 100%;
+    display: block;
+    width: 100%;
+    position: relative;
+    color: #777;
+    padding-top: 35px;
+    transition: .2s color linear
+}
+#advertisersSubHeader li span:before {
+    position: absolute;
+    content: "";
+    width: 44px;
+    height: 44px;
+    left: 0;
+    top: 27px;
+    background: url("../img/content/applovin_advertisers/sub-navigation-sprite.svg") no-repeat
+}
+#advertisersSubHeader li span.active {
+    color: #0583aa;
+    box-shadow: 0 -2px 0 #0583aa inset
+}
+#advertisersSubHeader li.recommendations span {
+    padding-left: 66px
+}
+#advertisersSubHeader li.recommendations span:before {
+    background-position: -60px -106px;
+    left: 10px
+}
+#advertisersSubHeader li.recommendations span.active:before {
+    background-position: 0 -106px
+}
+#advertisersSubHeader li.crossscreen span {
+    padding-left: 80px
+}
+#advertisersSubHeader li.crossscreen span:before {
+    background-position: -58px -217px;
+    left: 22px
+}
+#advertisersSubHeader li.crossscreen span.active:before {
+    background-position: 2px -217px
+}
+#advertisersSubHeader li.targeting span {
+    padding-left: 75px
+}
+#advertisersSubHeader li.targeting span:before {
+    background-position: -59px -51px;
+    left: 20px
+}
+#advertisersSubHeader li.targeting span.active:before {
+    background-position: 1px -51px
+}
+#advertisersSubHeader li.support span {
+    padding-left: 85px
+}
+#advertisersSubHeader li.support span:before {
+    background-position: -59px 6px;
+    left: 25px
+}
+#advertisersSubHeader li.support span.active:before {
+    background-position: 1px 6px
+}
+#advertisersSubHeader li.measurement span {
+    padding-left: 75px
+}
+#advertisersSubHeader li.measurement span:before {
+    background-position: -60px -164px;
+    left: 15px
+}
+#advertisersSubHeader li.measurement span.active:before {
+    background-position: 0 -164px
+}
+.advertisersHeader,
+.developersHeader {
+    color: #FFF;
+    text-align: center;
+    width: 695px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -170px 0 0 -340px
+}
+.advertisersHeader h1,
+.developersHeader h1 {
+    font-size: 26px;
+    margin: 0 0 20px 0
+}
+.advertisersHeader span,
+.developersHeader span {
+    display: block;
+    font-size: 38px;
+    font-family: "AvenirLTStd-Heavy";
+    margin: 0 0 30px 0
+}
+.advertisersHeader p,
+.developersHeader p {
+    font-size: 22px;
+    margin: 0
+}
+#advertisers-1,
+#developers-1 {
+    z-index: 8
+}
+#advertisers-1 .scrollButton,
+#developers-1 .scrollButton {
+    bottom: 130px
+}
+#advertisers-1 .subHeader,
+#developers-1 .subHeader {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+.advertisersScroll .contentSmart,
+.developersScroll .contentSmart {
+    position: absolute;
+    top: 50%
+}
+.advertisersScroll .contentSmart h2,
+.developersScroll .contentSmart h2 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 38px;
+    color: #333;
+    text-transform: none;
+    margin: 0 0 5px 0;
+    line-height: 40px
+}
+.advertisersScroll .contentSmart .subhead,
+.developersScroll .contentSmart .subhead {
+    font-size: 26px;
+    color: #777;
+    display: block;
+    margin-bottom: 25px
+}
+.advertisersScroll .contentSmart p,
+.developersScroll .contentSmart p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    line-height: 1.6em
+}
+.advertisersScroll .contentSmart.invert h2,
+.developersScroll .contentSmart.invert h2,
+.advertisersScroll .contentSmart.invert p,
+.developersScroll .contentSmart.invert p {
+    color: #FFF
+}
+.advertisersScroll .contentSmart.invert .subhead,
+.developersScroll .contentSmart.invert .subhead {
+    color: rgba(255, 255, 255, 0.7)
+}
+#advertisers-2 .contentSmart {
+    padding: 0 35px;
+    height: 360px;
+    margin-top: -100px
+}
+#advertisers-2 .contentSmart img {
+    float: left;
+    margin-right: 60px
+}
+#advertisers-2 .contentSmart h2 {
+    padding-top: 20px
+}
+#advertisers-3 .contentSmart {
+    padding: 0;
+    height: 280px;
+    margin-top: -60px
+}
+#advertisers-3 .contentSmart img {
+    float: right;
+    margin-right: -90px;
+    margin-left: 100px
+}
+#advertisers-3 .contentSmart h2 {
+    padding-top: 20px
+}
+#advertisers-4 .contentSmart {
+    height: 280px;
+    margin-top: -60px;
+    padding-left: 60%
+}
+#advertisers-4 .appBackground {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../img/content/applovin_advertisers/section-4/background.jpg") no-repeat;
+    background-size: auto 100%;
+    background-position: left center
+}
+#advertisers-5 .contentSmart {
+    height: 280px;
+    margin-top: -60px;
+    padding-left: 55%
+}
+#advertisers-5 .contentSmart h2 {
+    padding-top: 50px
+}
+#advertisers-5 .roiBackground {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../img/content/applovin_advertisers/section-5/background.jpg") no-repeat;
+    background-size: auto 100%;
+    background-position: left center
+}
+#advertisers-5 #reportFile {
+    width: 215px;
+    height: 270px;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+    z-index: 2;
+    background: url("../img/content/applovin_advertisers/section-5/report.png") no-repeat;
+    background-position: right top
+}
+#advertisers-5 #reportFile>span {
+    color: #FFF;
+    background: #0b303c;
+    display: inline-block;
+    border-radius: 300px;
+    text-align: center;
+    width: 155px;
+    height: 155px;
+    padding: 32px 15px 0 15px;
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    font-size: 15px
+}
+#advertisers-6 .contentSmart {
+    padding: 0 35px;
+    height: 300px;
+    margin-top: -70px
+}
+#advertisers-6 .contentSmart img {
+    float: right;
+    margin-left: 60px
+}
+#advertisers-7 .advertisersEnd {
+    height: 73%;
+    padding-top: 160px
+}
+#advertisers-7 .scrollFooter {
+    height: 27%
+}
+#advertisers-7 .contactEnd,
+#developers-7 .contactEnd {
+    height: 60%;
+    position: relative
+}
+#advertisers-7 .contactEnd .wrap,
+#developers-7 .contactEnd .wrap {
+    height: 164px;
+    position: absolute;
+    top: 50%;
+    margin-top: -82px;
+    left: 50%;
+    margin-left: -470px
+}
+#advertisers-7 .contactEnd span,
+#developers-7 .contactEnd span {
+    text-align: center;
+    display: block
+}
+#advertisers-7 .contactEnd .head,
+#developers-7 .contactEnd .head {
+    font-family: "AvenirLTStd-Black";
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+#advertisers-7 .contactEnd .sub,
+#developers-7 .contactEnd .sub {
+    font-size: 18px;
+    color: #777
+}
+#advertisers-7 .contactEnd .button,
+#developers-7 .contactEnd .button {
+    width: 260px;
+    margin: 25px auto 0 auto
+}
+#developers-1 {
+    background-image: url("../img/content/developers/section-1/background.jpg")
+}
+#developers-2 {
+    background: #fff
+}
+#developers-3 {
+    background: #c54e23
+}
+#developers-4 {
+    background: #fff
+}
+#developers-5 {
+    background: #c54e23
+}
+#developers-6 {
+    background: #fff
+}
+#developers-7 {
+    background: #fff
+}
+#developersSubHeader li {
+    width: 20%;
+    display: block;
+    height: 100px;
+    float: left
+}
+#developersSubHeader li span {
+    cursor: pointer;
+    height: 100%;
+    display: block;
+    width: 100%;
+    position: relative;
+    color: #777;
+    padding-top: 35px;
+    transition: .2s color linear
+}
+#developersSubHeader li span:before {
+    position: absolute;
+    content: "";
+    width: 44px;
+    height: 44px;
+    left: 0;
+    top: 27px;
+    background: url("../img/content/developers/sub-navigation-sprite.svg") no-repeat
+}
+#developersSubHeader li span.active {
+    color: #c54e23;
+    box-shadow: 0 -2px 0 #e67e54 inset
+}
+#developersSubHeader li.revenue span {
+    padding-right: 20px;
+    padding-left: 90px
+}
+#developersSubHeader li.revenue span:before {
+    background-position: -58px 8px;
+    left: 35px
+}
+#developersSubHeader li.revenue span.active:before {
+    background-position: 2px 8px
+}
+#developersSubHeader li.formats span {
+    padding-left: 90px
+}
+#developersSubHeader li.formats span:before {
+    background-position: -58px -50px;
+    left: 32px
+}
+#developersSubHeader li.formats span.active:before {
+    background-position: 2px -50px
+}
+#developersSubHeader li.platforms span {
+    padding-left: 86px
+}
+#developersSubHeader li.platforms span:before {
+    background-position: -59px -105px;
+    left: 28px
+}
+#developersSubHeader li.platforms span.active:before {
+    background-position: 1px -105px
+}
+#developersSubHeader li.devsupport span {
+    padding-left: 64px;
+    padding-right: 10px
+}
+#developersSubHeader li.devsupport span:before {
+    background-position: -58px -162px;
+    left: 8px
+}
+#developersSubHeader li.devsupport span.active:before {
+    background-position: 2px -162px
+}
+#developersSubHeader li.results span {
+    padding-right: 20px;
+    padding-left: 85px
+}
+#developersSubHeader li.results span:before {
+    background-position: -59px -215px;
+    left: 30px
+}
+#developersSubHeader li.results span.active:before {
+    background-position: 1px -215px
+}
+.developersHeader {
+    width: 100%;
+    margin: -170px 0 0 -50%
+}
+#developers-2 .contentSmart {
+    height: 310px;
+    margin-top: -70px
+}
+#developers-2 .contentSmart img {
+    float: left;
+    margin-right: 60px
+}
+#developers-2 .contentSmart h2 {
+    padding-top: 10px
+}
+#developers-3 .contentSmart {
+    padding: 0 40px;
+    height: 270px;
+    margin-top: -50px
+}
+#developers-3 .contentSmart img {
+    float: right;
+    margin-left: 50px
+}
+#developers-3 .contentSmart h2 {
+    padding-top: 5px
+}
+#developers-4 .contentSmart {
+    padding: 0 20px;
+    height: 310px;
+    margin-top: -70px
+}
+#developers-4 .contentSmart img {
+    float: left;
+    margin-right: 80px
+}
+#developers-4 .contentSmart h2 {
+    padding-top: 15px
+}
+#developers-5 .contentSmart {
+    height: 280px;
+    margin-top: -60px;
+    padding-right: 55%
+}
+#developers-5 .boxBackground {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../img/content/developers/section-5/background.png") no-repeat center right;
+    background-size: auto 100%
+}
+#developers-5 #boxSupport {
+    width: 245px;
+    height: 290px;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    z-index: 2;
+    background: url("../img/content/developers/section-5/box.png") no-repeat;
+    background-position: right top
+}
+#developers-5 #boxSupport>span {
+    color: #c54e23;
+    font-family: "AvenirLTStd-Black";
+    background: #FFF;
+    display: inline-block;
+    border-radius: 300px;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    padding: 25px 5px 0 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 20px
+}
+#developers-6 .contentSmart {
+    padding: 0 70px;
+    height: 300px;
+    margin-top: -70px
+}
+#developers-6 .contentSmart img {
+    float: left;
+    margin-right: 80px
+}
+#developers-7 .developersEnd {
+    height: 66.666%;
+    padding-top: 160px
+}
+#developers-7 .contactEnd {
+    height: 100%
+}
+#developers-7 .scrollFooter {
+    height: 33.333%
+}
+.contentPage header {
+    position: relative;
+    background: transparent
+}
+.contentPage .hero {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #FFF;
+    text-align: center
+}
+.contentPage .hero.contactHero {
+    background-image: url("../img/content/contact/hero.jpg")
+}
+.contentPage .hero.templatesHero {
+    background-image: url("../img/content/templates/hero.jpg")
+}
+.contentPage .hero.blogHero {
+    background-image: url("../img/content/blog/hero.jpg")
+}
+.contentPage .hero.pressHero {
+    background-image: url("../img/content/press/hero.jpg")
+}
+.contentPage .hero.aboutHero {
+    background-image: url("../img/content/about/hero.jpg");
+    height: 100%;
+    position: relative
+}
+.contentPage .hero.teamHero {
+    background-image: url("../img/content/team/hero.jpg");
+    height: 100%;
+    position: relative
+}
+.contentPage .hero.testoHero {
+    background-image: url("../img/content/testimonials/hero.jpg");
+    height: 100%;
+    position: relative
+}
+.contentPage .hero.jobsHero {
+    background-image: url("../img/content/jobs/hero.jpg");
+    height: 100%;
+    position: relative
+}
+.contentPage .hero h1 {
+    font-family: "AvenirLTStd-Book";
+    font-size: 26px;
+    margin: 100px 0 10px 0
+}
+.contentPage .hero span.subHead {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 40px
+}
+.contentPage hr {
+    margin: 40px auto;
+    border-top: 1px solid #bebebe;
+    width: 100%
+}
+.contentPage .box.half {
+    width: 50%;
+    float: left
+}
+.contentPage .box.third {
+    width: 33.3333%;
+    float: left
+}
+.contentPage .box h4 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0 0 5px 0
+}
+.contentPage .box h4.space {
+    margin-top: 30px
+}
+.contentPage .box p {
+    font-family: "AvenirLTStd-Light";
+    font-size: 15px;
+    line-height: 1.6em;
+    color: #333;
+    margin: 0 0 4px 0
+}
+.contentPage .box a {
+    color: #0583aa;
+    text-decoration: none;
+    font-family: "AvenirLTStd-Medium";
+    font-size: 15px
+}
+.contentPage .box a:hover {
+    text-decoration: underline
+}
+.contentPage .box a.block {
+    display: block;
+    margin-bottom: 2px
+}
+.contactContent {
+    padding: 50px 60px
+}
+.contactContent h3 {
+    margin: 0 0 40px 0;
+    font-family: "AvenirLTStd-Light";
+    font-size: 22px;
+    color: #333;
+    text-align: center
+}
+.contactContent .box.half {
+    padding-right: 100px
+}
+.contactContent .socialLink {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style-type: none
+}
+.contactContent .socialLink li {
+    display: inline-block;
+    margin-right: 10px
+}
+.contactContent .socialLink li a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/content/contact/social-sprite.svg") no-repeat;
+    text-indent: -99999em;
+    opacity: .5;
+    transition: .2s opacity linear
+}
+.contactContent .socialLink li a:hover {
+    opacity: .7
+}
+.contactContent .socialLink li a.facebook {
+    background-position: -34px 0
+}
+.contactContent .socialLink li a.twitter {
+    background-position: -77px 0
+}
+.contactContent .offices {
+    text-align: center;
+    padding: 0 10px
+}
+.contactContent .offices.first {
+    padding: 0 20px 0 0
+}
+.contactContent .offices.last {
+    padding: 0 0 0 20px
+}
+.contactContent .googleMap {
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+    position: relative
+}
+.contactContent .googleMap a {
+    font-size: 9px
+}
+.textContentPage>.wrap {
+    padding: 140px 0 60px 0
+}
+.textContentPage .textContent {
+    width: 620px;
+    margin-right: 20px;
+    float: left;
+    color: #333
+}
+.textContentPage .textContent ul {
+    margin: 15px 0;
+    padding: 0 0 0 30px
+}
+.textContentPage .textContent ul li {
+    margin-bottom: 4px
+}
+.textContentPage .textContent a,
+.textContentPage .sidebar a {
+    color: #0583aa;
+    text-decoration: none;
+    font-family: "AvenirLTStd-Heavy"
+}
+.textContentPage .textContent a:hover,
+.textContentPage .sidebar a:hover {
+    text-decoration: underline
+}
+.textContentPage .sidebar {
+    float: right;
+    width: 300px;
+    padding-left: 20px
+}
+.textContentPage .sidebar section {
+    background: #eee;
+    padding: 16px;
+    margin-bottom: 5px
+}
+.textContentPage .sidebar a {
+    font-family: 16px;
+    padding: 3px 16px 0 0;
+    background: url("../img/sidebar-link.svg") no-repeat right center
+}
+.textContentPage .sidebar .truste a {
+    background: 0;
+    padding: 0
+}
+.textContentPage h1,
+.textContentPage h2,
+.textContentPage h3 {
+    font-family: "AvenirLTStd-Heavy"
+}
+.textContentPage h1 {
+    font-size: 36px;
+    margin: 0 0 20px 0
+}
+.textContentPage h2 {
+    font-size: 24px;
+    margin: 30px 0 20px 0
+}
+.textContentPage h3 {
+    font-size: 18px;
+    margin: 25px 0 15px 0
+}
+.textContentPage p {
+    margin: 15px 0
+}
+.blogContent {
+    padding: 60px 0
+}
+.blogContent .breadCrumb {
+    margin: -30px 0 30px 0
+}
+.blogContent .breadCrumb a {
+    padding: 2px 0 0 16px;
+    background: url("../img/back-link.svg") no-repeat left center
+}
+.blogContent .subPagination>span {
+    width: 50%;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left
+}
+.blogContent .subPagination .prev {
+    padding: 2px 0 0 16px;
+    background: url("../img/back-link.svg") no-repeat left center
+}
+.blogContent .subPagination .next {
+    text-align: right;
+    padding: 2px 16px 0 0;
+    background: url("../img/sidebar-link.svg") no-repeat right center
+}
+.blogContent .theContent {
+    width: 620px;
+    margin-right: 20px;
+    float: left;
+    color: #333
+}
+.blogContent .post p {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.8em
+}
+.blogContent .post p:first-child {
+    margin-top: 0
+}
+.blogContent .post .wp-caption-text {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 10px 0 15px 0
+}
+.blogContent .post blockquote {
+    padding-left: 20px;
+    margin: 20px 0 20px 40px;
+    border-left: 2px solid rgba(0, 0, 0, 0.1)
+}
+.blogContent .post img {
+    max-width: 97.5%
+}
+.blogContent .post img[class*="align"],
+.blogContent .post img[class*="wp-image-"] {
+    height: auto
+}
+.blogContent .post img.size-full {
+    max-width: 97.5%;
+    width: auto
+}
+.blogContent .post .wp-caption {
+    max-width: 100%
+}
+.blogContent article {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px
+}
+.blogContent article .postTitle {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 24px;
+    margin: 0 0 5px 0
+}
+.blogContent article .postTitle a {
+    text-decoration: none;
+    color: #333
+}
+.blogContent article small {
+    font-size: 14px;
+    color: #777;
+    font-family: "AvenirLTStd-Heavy";
+    margin-bottom: 20px;
+    display: block
+}
+.blogContent article .left {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px
+}
+.blogContent article .left img {
+    width: 100px;
+    height: 100px
+}
+.blogContent article .right {
+    float: left;
+    width: 500px
+}
+.blogContent article .right .more-link {
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px
+}
+.blogContent article.singlePost .post {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px
+}
+.blogContent article.singlePost .post img {
+    max-width: 100%;
+    margin: 0 6px 6px 0;
+    padding: 3px;
+    border: 1px solid #d0d0d0
+}
+.blogContent article.singlePost .postTitle {
+    font-size: 36px;
+    margin-top: -5px;
+    line-height: 42px
+}
+.blogContent article.singlePost small {
+    font-family: "AvenirLTStd-Book";
+    font-size: 16px;
+    margin-bottom: 0
+}
+.blogContent article.singlePost p {
+    font-size: 16px;
+    font-family: "AvenirLTStd-Light";
+    line-height: 1.6em;
+    margin: 20px 0
+}
+.blogContent article .shareArea {
+    border-top: 1px solid #eee;
+    padding: 20px 0 30px 0;
+    margin-top: 30px
+}
+.blogContent article .shareArea h4 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #9a9a9a;
+    margin: 0 0 10px 0
+}
+.blogContent article .shareArea .shareButton {
+    float: left;
+    width: 20%
+}
+.blogContent .sidebar {
+    float: left;
+    width: 300px;
+    padding-left: 20px
+}
+.blogContent .sidebar h3 {
+    font-family: "AvenirLTStd-Heavy";
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    color: #333
+}
+.blogContent .sidebar>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+.blogContent .sidebar>ul>li {
+    background: #efefef;
+    margin-bottom: 5px;
+    padding: 20px
+}
+.blogContent .sidebar>ul>li.searchWidget {
+    padding: 10px
+}
+.blogContent .sidebar .authorsWidget ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+.blogContent .sidebar .authorsWidget li {
+    display: inline
+}
+.blogContent .sidebar .authorsWidget li img {
+    width: 32px;
+    height: 32px;
+    margin: 0 3px 3px 0
+}
+.blogContent .sidebar .archivesWidget ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+.blogContent .sidebar .archivesWidget ul li {
+    margin-bottom: 4px;
+    font-size: 14px
+}
+.blogContent .sidebar .searchWidget #searchform {
+    position: relative
+}
+.blogContent .sidebar .searchWidget input[type=text] {
+    border: 1px solid #a8a8a8;
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 18px;
+    height: 40px;
+    width: 100%;
+    padding: 3px 40px 0 10px
+}
+.blogContent .sidebar .searchWidget input[type=text]:focus {
+    outline: 0;
+    border: 1px solid #0583aa
+}
+.blogContent .sidebar .searchWidget input[type=submit] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    height: 40px;
+    width: 40px;
+    background: url("../img/search.svg") no-repeat center center
+}
+.blogContent .post a,
+.blogContent .sidebar a,
+.blogContent .nextPosts a,
+.blogContent .subPagination a,
+.blogContent .breadCrumb a {
+    color: #0583aa;
+    text-decoration: none;
+    font-family: "AvenirLTStd-Heavy"
+}
+.blogContent .post a:hover,
+.blogContent .sidebar a:hover,
+.blogContent .nextPosts a:hover,
+.blogContent .subPagination a:hover,
+.blogContent .breadCrumb a:hover {
+    text-decoration: underline
+}
+.blogContent .nextPosts {
+    text-align: center
+}
+.dynamicHeight {
+    height: 100%;
+    min-height: 100%
+}
+.dynamicHeight footer {
+    height: 20%;
+    min-height: 160px
+}
+.formsPage .hero {
+    position: relative;
+    height: 80%;
+    min-height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+.formsPage .hero.loginHero {
+    background-image: url("../img/content/login/background.jpg")
+}
+.formsPage .hero.registerHero {
+    background: #1684a8;
+    max-height: 600px
+}
+.formsPage header {
+    background: rgba(255, 255, 255, 0);
+    position: absolute
+}
+.formsPage header nav {
+    display: none
+}
+.formsPage .formWrap {
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    top: 50%
+}
+.formsPage .formWrap.loginForm {
+    margin-top: -130px;
+    top: 40%
+}
+.formsPage .formWrap.authForm {
+    margin-top: -130px;
+    margin-left: -306px
+}
+.formsPage .formWrap.registerForm {
+    width: 360px;
+    top: 90px;
+    margin-left: -180px
+}
+.formsPage .formWrap.registerForm h1 {
+    margin-bottom: 15px
+}
+.formsPage .formWrap.registerForm .row {
+    margin-bottom: 10px
+}
+.formsPage .formWrap.registerForm .g-recaptcha {
+    margin: 25px 0 0 8px
+}
+.formsPage .formWrap.registerForm .buttonSection .button {
+    width: 144px;
+    display: block!important;
+    margin: 0 auto
+}
+.formsPage .formWrap hr {
+    border-top: 1px solid #1684a8
+}
+.formsPage .formWrap h1 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 4px 0
+}
+.formsPage .formWrap .form {
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 20px 20px
+}
+.formsPage .formWrap .form .intro {
+    font-family: "AvenirLTStd-Light";
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+    display: block;
+    margin: 0 auto 15px
+}
+.formsPage .formWrap .form .intro a {
+    color: #0583aa;
+    font-family: "AvenirLTStd-Heavy";
+    text-decoration: none
+}
+.formsPage .formWrap .form .intro a:hover {
+    text-decoration: underline
+}
+.formsPage .formWrap .form .customSelect {
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+    background: url("../img/cc-dropdown-arrow.svg") no-repeat 294px #fff;
+    font-family: "AvenirLTStd-Light"
+}
+.formsPage .formWrap .form .customSelect select {
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    border: 0;
+    border-radius: 0;
+    height: 44px;
+    -webkit-appearance: caret;
+    -moz-appearance: window;
+    font-family: "AvenirLTStd-Light";
+    padding: 10px
+}
+.formsPage .formWrap .form .customSelect select:focus {
+    outline: 0
+}
+.formsPage .formWrap .form .row {
+    display: block;
+    width: 100%;
+    position: relative
+}
+.formsPage .formWrap .form .row input[type=text],
+.formsPage .formWrap .form .row input[type=password],
+.formsPage .formWrap .form .row input[type=url],
+.formsPage .formWrap .form .row input[type=email] {
+    font-family: "AvenirLTStd-Light";
+    border: 1px solid #d7d7d7;
+    font-size: 16px;
+    height: 44px;
+    padding: 0 10px;
+    display: block;
+    width: 100%;
+    transition: .2s all linear;
+    position: relative;
+    margin-top: -1px
+}
+.formsPage .formWrap .form .row input[type=text]:fist-child,
+.formsPage .formWrap .form .row input[type=password]:fist-child,
+.formsPage .formWrap .form .row input[type=url]:fist-child,
+.formsPage .formWrap .form .row input[type=email]:fist-child {
+    margin-top: 0
+}
+.formsPage .formWrap .form .row input[type=text]:focus,
+.formsPage .formWrap .form .row input[type=password]:focus,
+.formsPage .formWrap .form .row input[type=url]:focus,
+.formsPage .formWrap .form .row input[type=email]:focus {
+    outline: 0;
+    border: 1px solid #0583aa;
+    z-index: 1
+}
+.formsPage .formWrap .form .row input[type=tel] {
+    font-family: "AvenirLTStd-Light";
+    border: 1px solid #d7d7d7;
+    font-size: 16px;
+    height: 44px;
+    padding: 0 48px;
+    display: block;
+    width: 100%;
+    transition: .2s all linear;
+    position: relative;
+    margin-top: -1px
+}
+.formsPage .formWrap .form .row input[type=tel]:fist-child {
+    margin-top: 0
+}
+.formsPage .formWrap .form .row input[type=tel]:focus {
+    outline: 0;
+    border: 1px solid #0583aa
+}
+.formsPage .formWrap .form .row .errorLabel {
+    display: none;
+    font-size: 16px;
+    color: #f00;
+    padding: 6px 0 10px 0
+}
+.formsPage .formWrap .form .row.error .errorLabel {
+    display: block
+}
+.formsPage .formWrap .form .row.error input {
+    border: 1px solid #f00
+}
+.formsPage .formWrap .form .row label {
+    color: #777
+}
+.formsPage .formWrap .form .row.platform {
+    height: 44px
+}
+.formsPage .formWrap .form .row.platform label {
+    font-size: 16px;
+    float: left;
+    margin-right: 13px;
+    line-height: 44px
+}
+.formsPage .formWrap .form .row.platform label:last-child {
+    margin-right: 0
+}
+.formsPage .formWrap .form .row.pass .intro {
+    display: block;
+    text-align: center;
+    margin-top: 10px
+}
+.formsPage .formWrap .form .row.terms {
+    margin-top: 20px
+}
+.formsPage .formWrap .form .row.terms label {
+    font-size: 13px
+}
+.formsPage .formWrap .form .row.terms a {
+    color: #0583aa;
+    text-decoration: none
+}
+.formsPage .formWrap .form .row.terms a:hover {
+    text-decoration: underline
+}
+.formsPage .formWrap .form .row .iradio,
+.formsPage .formWrap .form .row .icheckbox {
+    float: left;
+    margin-right: 6px;
+    cursor: pointer
+}
+.formsPage .formWrap .form .row .iradio {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/cc-radio.svg");
+    position: relative;
+    top: 12px
+}
+.formsPage .formWrap .form .row .iradio.checked {
+    background-image: url("../img/cc-radio-selected.svg")
+}
+.formsPage .formWrap .form .row .icheckbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d7d7d7
+}
+.formsPage .formWrap .form .row .icheckbox.checked {
+    background: url("../img/cc-checkbox.svg") no-repeat center center
+}
+.formsPage .formWrap .form .buttonSection {
+    margin-top: 20px
+}
+.formsPage .formWrap .form .buttonSection input[type=submit] {
+    border: 0;
+    border-radius: 3px;
+    font-family: "AvenirLTStd-Heavy";
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 24px;
+    text-align: center;
+    background: #df4500;
+    transition: .2s all linear;
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.3) inset;
+    letter-spacing: 1px;
+    display: inline-block
+}
+.formsPage .formWrap .form .buttonSection input[type=submit]:hover {
+    background: #9d3101
+}
+.formsPage .formWrap .form .buttonSection input[type=submit].center {
+    display: block!important;
+    margin: 0 auto
+}
+.formsPage .formWrap .form .buttonSection input[type=submit].loading {
+    background-image: url(/assets/images/buttonLoader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 20px;
+    color: transparent;
+    transition: none
+}
+.formsPage .formWrap .form .buttonSection a {
+    font-family: "AvenirLTStd-Light";
+    font-size: 14px;
+    float: right;
+    text-decoration: none;
+    color: #777;
+    line-height: 39px
+}
+.formsPage .formWrap .form .buttonSection a:hover {
+    text-decoration: underline
+}
+.formsPage .formWrap .form .buttonSection a.formLogoutButton {
+    float: none;
+    color: #df4500
+}
+.formsPage .formWrap #duo_iframe {
+    width: 100%;
+    min-width: 620px;
+    max-width: 620px;
+    height: 330px
+}
+.formsPage .preFoot {
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    bottom: 50px;
+    text-align: center
+}
+.formsPage .preFoot a {
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: "AvenirLTStd-Heavy";
+    transition: .2s all linear;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+.formsPage .preFoot a:hover {
+    opacity: .5
+}
+.formsPage .registerSub {
+    height: 100%;
+    max-height: 600px
+}
+.formsPage .registerSub .bottomSection {
+    height: 70%;
+    background: #1684a8;
+    min-height: 400px
+}
+.formsPage .registerSub .bottomSection span {
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: "HomemadeApplePro";
+    width: 80%;
+    padding-top: 360px
+}
+.formsPage .registerSub footer {
+    height: 30%
+}
+.formsPage .thankyouSection h2 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 20px
+}
+.formsPage .thankyouSection>span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px
+}
+.formsPage .thankyouSection ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+.formsPage .thankyouSection li {
+    margin-bottom: 4px
+}
+.formsPage .thankyouSection a {
+    color: #0583aa;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 2px 0 2px 24px
+}
+.formsPage .thankyouSection a:hover {
+    text-decoration: underline
+}
+.formsPage .thankyouSection a.linkedin {
+    background: url("../img/content/register/linkedin.svg") no-repeat left center
+}
+.formsPage .thankyouSection a.facebook {
+    background: url("../img/content/register/facebook.svg") no-repeat 3px center
+}
+.formsPage .thankyouSection a.twitter {
+    background: url("../img/content/register/twitter.svg") no-repeat left center
+}
+.invalidField {
+    -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, 0.3)!important;
+    -moz-box-shadow: 0 0 5px rgba(255, 0, 0, 0.3)!important;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3)!important;
+    border: 1px solid #f00!important
+}
+span.ErrorTooltip {
+    position: absolute;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #7f0e0c;
+    background: #fde5e3;
+    border: 1px solid #f9c0bb;
+    border-radius: 5px;
+    text-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 2px 0;
+    z-index: 1;
+    display: none;
+    margin-top: 0;
+    margin-left: 10px;
+    left: 100%;
+    top: 3px;
+    width: 150px
+}
+span.ErrorTooltip:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #fde5e3 transparent transparent;
+    top: 8px;
+    right: 100%;
+    left: auto;
+    z-index: 1
+}
+span.ErrorTooltip:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent #f9c0bb transparent transparent;
+    top: 7px;
+    right: 100%;
+    left: auto;
+    margin-bottom: -1px;
+    z-index: 1
+}
+.pressContent .wrap {
+    max-width: 740px;
+    padding: 0
+}
+.pressContent footer .wrap {
+    max-width: 940px
+}
+.pressContent .slice {
+    padding: 60px 0;
+    color: #333
+}
+.pressContent .slice.invert {
+    color: #FFF
+}
+.pressContent .slice h2 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+    text-align: center;
+    padding-left: 20px;
+    position: relative
+}
+.pressContent .slice h2:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    background: no-repeat center center
+}
+.pressContent .news h2:before {
+    background-image: url("../img/content/press/icon-news.svg");
+    left: -15px
+}
+.pressContent .press {
+    background: #efefef
+}
+.pressContent .press h2:before {
+    background-image: url("../img/content/press/icon-release.svg");
+    left: -15px
+}
+.pressContent .media {
+    background: #1684a8
+}
+.pressContent .media h2:before {
+    background-image: url("../img/content/press/icon-mediakit.svg");
+    left: -15px;
+    top: 8px
+}
+.pressContent .news a,
+.pressContent .press a {
+    font-size: 16px;
+    font-family: "AvenirLTStd-Heavy";
+    color: #0583aa;
+    text-decoration: none
+}
+.pressContent .news a:hover,
+.pressContent .press a:hover {
+    text-decoration: underline
+}
+.pressContent .news ul,
+.pressContent .press ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+.pressContent .news ul li,
+.pressContent .press ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px
+}
+.pressContent .news ul li>img,
+.pressContent .press ul li>img {
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin: 6px 25px 6px 0
+}
+.pressContent .news ul li>span,
+.pressContent .press ul li>span {
+    float: right;
+    color: #999
+}
+.pressContent .news .viewMore,
+.pressContent .press .viewMore {
+    font-family: "AvenirLTStd-Heavy";
+    cursor: pointer;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase
+}
+.pressContent .media h3 {
+    border-bottom: 1px solid #FFF;
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin: 40px 0 15px 0
+}
+.pressContent .media .asset {
+    float: left;
+    margin-right: 2.6%;
+    width: 23%
+}
+.pressContent .media .asset.last {
+    margin-right: 0
+}
+.pressContent .media .asset img {
+    display: block;
+    max-width: 100%;
+    max-height: 100px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 3px
+}
+.pressContent .media .asset span {
+    font-size: 12px
+}
+.pressContent .media .asset a {
+    color: #FFF;
+    font-family: "AvenirLTStd-Heavy";
+    text-decoration: none
+}
+.pressContent .media .asset a:hover {
+    text-decoration: underline
+}
+.pressContent .media .member {
+    margin-top: 30px
+}
+.pressContent .media .member .title {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 20px;
+    display: block;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer
+}
+.pressContent .media .member .title>span {
+    font-size: 16px
+}
+.pressContent .media .member .title:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 0;
+    top: 2px;
+    background: url("../img/content/press/arrow-close.svg") no-repeat center center;
+    transition: .2s all linear
+}
+.pressContent .media .member .title.active:before {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+.pressContent .media .member p {
+    font-family: "AvenirLTStd-Light";
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    display: none
+}
+.pressContent .contact p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-family: "AvenirLTStd-Light";
+    margin: 0 0 40px 0
+}
+.pressContent .contact .button {
+    margin: 0 auto;
+    width: 260px
+}
+.contentPage.about {
+    height: 100%;
+    min-height: 100%
+}
+.team-cluster {
+    color: #FFF;
+    text-align: center
+}
+.team-cluster>div {
+    width: 24%;
+    margin: 0 1.3333% 1.3332% 0;
+    float: left;
+    position: relative
+}
+.team-cluster>div.no-img {
+    background: transparent
+}
+.team-cluster>div.no-img>div {
+    opacity: 1
+}
+.team-cluster>div:nth-child(1n) {
+    background: #0583aa
+}
+.team-cluster>div:nth-child(2n) {
+    background: #df4500
+}
+.team-cluster>div:nth-child(3n) {
+    background: #333
+}
+.team-cluster>div:nth-child(4n) {
+    margin-right: 0;
+    background: #888
+}
+.team-cluster>div:nth-child(5n) {
+    background: #888
+}
+.team-cluster>div:nth-child(6n) {
+    background: #0583aa
+}
+.team-cluster>div:nth-child(7n) {
+    background: #df4500
+}
+.team-cluster>div:nth-child(8n) {
+    background: #333
+}
+.team-cluster>div:nth-child(9n) {
+    background: #333
+}
+.team-cluster>div:nth-child(10n) {
+    background: #888
+}
+.team-cluster>div:nth-child(11n) {
+    background: #0583aa
+}
+.team-cluster>div:nth-child(12n) {
+    background: #df4500
+}
+.team-cluster>div:nth-child(13n) {
+    background: #df4500
+}
+.team-cluster>div:nth-child(14n) {
+    background: #333
+}
+.team-cluster>div:nth-child(15n) {
+    background: #888
+}
+.team-cluster>div:nth-child(16n) {
+    background: #0583aa
+}
+.team-cluster>div:hover>img,
+.team-cluster>div.touched>img {
+    opacity: .2
+}
+.team-cluster>div:hover>div,
+.team-cluster>div.touched>div {
+    opacity: 1
+}
+.team-cluster>div>img {
+    max-width: 100%;
+    transition: .2s all linear
+}
+.team-cluster>div>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 60px;
+    opacity: 0;
+    transition: .2s all linear
+}
+.team-cluster>div>div span {
+    display: block;
+    font-family: "AvenirLTStd-Light"
+}
+.team-cluster>div .name {
+    font-size: 24px;
+    margin-bottom: 2px
+}
+.team-cluster>div .title {
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+.team-cluster>div a {
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    text-indent: -999999em;
+    background: url("../img/content/about/linkedin.svg") no-repeat
+}
+.aboutContent {
+    padding: 60px 0;
+    color: #333
+}
+.aboutContent h2 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 30px 0
+}
+.aboutContent .tease {
+    font-size: 30px;
+    font-family: "AvenirLTStd-Light";
+    text-align: center;
+    padding: 0 70px;
+    margin: 0 0 40px 0;
+    line-height: 1.3em
+}
+.aboutContent .tease.smaller {
+    font-size: 20px;
+    padding: 0 120px;
+    line-height: 1.6em
+}
+.aboutContent .tease.n {
+    font-size: 25px;
+    padding: 0 120px;
+    margin: 0 0 30px 0
+}
+.aboutContent.workHere {
+    background: #1684a8;
+    color: #FFF;
+    padding: 70px 0
+}
+.aboutContent .diagram {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    max-width: 100%
+}
+.aboutContent .half {
+    float: left;
+    margin-bottom: 50px;
+    width: 50%;
+    padding: 0 50px;
+    text-align: center
+}
+.aboutContent .half.intro {
+    text-align: left
+}
+.aboutContent .half.intro.first {
+    padding: 0 25px 0 50px
+}
+.aboutContent .half.intro.second {
+    padding: 0 50px 0 25px
+}
+.aboutContent .half p {
+    font-family: "AvenirLTStd-Light";
+    font-size: 14px;
+    margin: 0
+}
+.aboutContent .half>span {
+    display: block
+}
+.aboutContent .half .stat {
+    color: #0583aa;
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 30px;
+    line-height: 1.2em
+}
+.aboutContent .half .meta {
+    font-family: "AvenirLTStd-Light";
+    font-size: 20px
+}
+.aboutContent hr {
+    margin: 0 0 50px 0
+}
+.aboutContent .team {
+    padding: 0 21px;
+    text-align: center;
+    position: relative
+}
+.aboutContent .team .clear {
+    display: block
+}
+.aboutContent .team .lastItem {
+    display: none;
+    color: #333;
+    background: #efefef;
+    position: absolute;
+    right: 8px;
+    bottom: -1px;
+    width: 216px;
+    height: 216px;
+    text-align: center;
+    padding-top: 75px
+}
+.aboutContent .team .lastItem span {
+    display: block
+}
+.aboutContent .team .lastItem .head {
+    font-family: "HomemadeApplePro";
+    font-size: 16px;
+    margin-bottom: 8px
+}
+.aboutContent .team .lastItem .sub {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+.aboutContent .subTeam {
+    margin-top: 50px;
+    display: inline-block;
+    width: 100%
+}
+.aboutContent .subTeam .subTeamMembers {
+    list-style-type: none;
+    margin: 15px 15px 0 0;
+    float: left;
+    width: 217px
+}
+.aboutContent .subTeam .subTeamMembers li {
+    height: 70px;
+    margin-bottom: 15px;
+    transition: .2s all linear
+}
+.aboutContent .subTeam .subTeamMembers li:hover {
+    opacity: .5
+}
+.aboutContent .subTeam .subTeamMembers a {
+    color: #0583aa;
+    text-decoration: none
+}
+.aboutContent .subTeam .subTeamMembers span {
+    display: block;
+    font-size: 14px
+}
+.aboutContent .subTeam .subTeamMembers span.member {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 14px
+}
+.aboutContent .button {
+    width: 400px;
+    margin: 0 auto
+}
+.aboutContent .investors {
+    float: left;
+    width: 30%;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0 5% 0 0;
+    padding: 0
+}
+.aboutContent .investors.last {
+    margin-right: 0
+}
+.aboutContent .investors li {
+    margin-bottom: 20px
+}
+.aboutContent .investors span {
+    display: block
+}
+.aboutContent .investors .name {
+    font-family: "AvenirLTStd-Heavy";
+    margin-bottom: 2px
+}
+.aboutContent .investors .company {
+    font-family: "AvenirLTStd-Book";
+    color: rgba(0, 0, 0, 0.6)
+}
+.aboutContent .reg {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    font-size: 13px
+}
+.aboutContent .outlinebtn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #0583aa;
+    border: 1px solid #0583aa;
+    border-radius: 3px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    font-family: "AvenirLTStd-Heavy";
+    text-decoration: none;
+    position: relative;
+    left: 50%;
+    margin-left: -71px
+}
+.aboutContent .outlinebtn:hover {
+    color: #005b78;
+    border-color: #005b78
+}
+.office-hero {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block
+}
+.contentIndent {
+    padding: 0 70px
+}
+.gen-quote .left,
+.gen-quote .right {
+    float: left;
+    width: 50%
+}
+.gen-quote .left {
+    padding-right: 110px
+}
+.gen-quote.shifted .left {
+    width: 55%
+}
+.gen-quote.shifted .right {
+    width: 45%
+}
+.gen-quote blockquote {
+    font-size: 30px;
+    margin: 0;
+    position: relative;
+    line-height: 1.2em
+}
+.gen-quote blockquote:before,
+.gen-quote blockquote:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px
+}
+.gen-quote blockquote:before {
+    background: url("../img/content/jobs/quote-open.svg") no-repeat center center;
+    top: -5px;
+    left: -40px
+}
+.gen-quote blockquote:after {
+    background: url("../img/content/jobs/quote-close.svg") no-repeat center center;
+    bottom: 15px;
+    right: -10px
+}
+.gen-quote .title,
+.gen-quote .name {
+    display: block;
+    font-size: 13px
+}
+.gen-quote .av {
+    max-width: 100px;
+    float: left;
+    position: relative;
+    top: -30px;
+    margin-right: 20px
+}
+.gen-quote .name,
+.gen-quote h3 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 15px;
+    margin: 25px 0 2px 0
+}
+.gen-quote .name.first,
+.gen-quote h3.first {
+    margin: 0 0 2px 0
+}
+.gen-quote .wav .name {
+    margin: 55px 0 2px 0
+}
+.gen-quote p {
+    margin: 0;
+    line-height: 1.4em;
+    font-size: 13px
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear
+}
+.fade.in {
+    opacity: 1
+}
+.collapse {
+    display: none
+}
+.collapse.in {
+    display: block
+}
+tr.collapse.in {
+    display: table-row
+}
+tbody.collapse.in {
+    display: table-row-group
+}
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility;
+    -o-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: .35s;
+    -o-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease
+}
+.carousel {
+    position: relative
+}
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%
+}
+.carousel-inner>.item {
+    display: none;
+    position: relative;
+    -webkit-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left
+}
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    line-height: 1
+}
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .carousel-inner>.item {
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        -o-transition: -o-transform .6s ease-in-out;
+        transition: transform .6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000px;
+        perspective: 1000px
+    }
+    .carousel-inner>.item.next,
+    .carousel-inner>.item.active.right {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        left: 0
+    }
+    .carousel-inner>.item.prev,
+    .carousel-inner>.item.active.left {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        left: 0
+    }
+    .carousel-inner>.item.next.left,
+    .carousel-inner>.item.prev.right,
+    .carousel-inner>.item.active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0
+    }
+}
+.carousel-inner>.active,
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    display: block
+}
+.carousel-inner>.active {
+    left: 0
+}
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+.carousel-inner>.next {
+    left: 100%
+}
+.carousel-inner>.prev {
+    left: -100%
+}
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+    left: 0
+}
+.carousel-inner>.active.left {
+    left: -100%
+}
+.carousel-inner>.active.right {
+    left: 100%
+}
+.pull-right {
+    float: right!important
+}
+.pull-left {
+    float: left!important
+}
+.hide {
+    display: none!important
+}
+.show {
+    display: block!important
+}
+.invisible {
+    visibility: hidden
+}
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0
+}
+.hidden {
+    display: none!important
+}
+.affix {
+    position: fixed
+}
+.tab-content>.tab-pane {
+    display: none
+}
+.tab-content>.active {
+    display: block
+}
+.team-center-hero {
+    position: absolute;
+    top: 50%;
+    margin-top: -140px;
+    left: 50%;
+    margin-left: -315px;
+    width: 630px
+}
+.team-center-hero .subHead {
+    line-height: 1.3em
+}
+span.clear {
+    display: block
+}
+.nav-tabs {
+    margin: 0 0 25px 0;
+    padding: 0;
+    text-align: center
+}
+.nav-tabs li {
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 15px 5px 15px
+}
+.nav-tabs li.active a {
+    color: #0583aa;
+    border-bottom: 2px solid #0583aa;
+    font-family: "AvenirLTStd-Heavy"
+}
+.nav-tabs a {
+    color: #666;
+    display: inline-block;
+    padding: 0 5px 5px 5px;
+    cursor: pointer
+}
+.arrow-link {
+    color: #0583aa;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 40px 0
+}
+.arrow-link:hover {
+    color: #004960
+}
+.arrow-link:hover:after {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px)
+}
+.arrow-link:after {
+    width: 21px;
+    height: 21px;
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: url(../img/arrow-link.svg) no-repeat;
+    top: 3px;
+    left: 7px;
+    transition: .2s all ease
+}
+.videosection img {
+    display: block;
+    margin: 0 auto 15px auto;
+    cursor: pointer;
+    max-width: 90%
+}
+h3.section-h {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 15px;
+    text-align: center;
+    margin: 25px 0 20px 0;
+    text-transform: uppercase
+}
+.t-quote {
+    padding: 10px 0 20px 0
+}
+.video-slider {
+    padding: 10px 0 50px 0
+}
+.video-slider .video {
+    width: 246px;
+    float: left;
+    text-align: center
+}
+.video-slider .video.mid {
+    margin: 0 31px
+}
+.video-slider .thumb {
+    width: 100%;
+    height: 138px;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative
+}
+.video-slider .thumb#anusha {
+    background-image: url("../img/content/team/AppLovin_TeamPage_VideoThumbnail_Anusha@2x.jpg")
+}
+.video-slider .thumb#kyler {
+    background-image: url("../img/content/team/AppLovin_TeamPage_VideoThumbnail_Kyler@2x.jpg")
+}
+.video-slider .thumb#tour {
+    background-image: url("../img/content/team/AppLovin_TeamPage_VideoThumbnail_TakeaTour@2x.jpg")
+}
+.video-slider .thumb:after {
+    width: 47px;
+    height: 47px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -24px 0 0 -24px;
+    background: url("../img/content/team/Play_Icon_SmallThumbnail_TeamPage@2x.png") no-repeat;
+    background-size: 47px 47px;
+    transition: .2s;
+    z-index: 1
+}
+.video-slider .thumb:hover:after {
+    transform: scale(1.1)
+}
+.video-slider .title {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 15px;
+    display: block;
+    margin-bottom: 4px
+}
+.video-slider p {
+    font-size: 13px;
+    margin: 0
+}
+.big-play {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 14px;
+    padding-top: 150px;
+    cursor: pointer;
+    position: relative
+}
+.big-play:after {
+    width: 122px;
+    height: 122px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -61px;
+    background: url("../img/content/team/Play_Icon_TeamPage@2x.png") no-repeat;
+    transition: .2s;
+    background-size: 122px 122px
+}
+.big-play:hover:after {
+    transform: scale(1.05)
+}
+.team-inner-poster {
+    color: #FFF;
+    text-align: center;
+    background-image: url("../img/content/team/AppLovin_TeamPage_Scooter@2x.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 800px
+}
+.team-inner-poster>div {
+    max-width: 580px;
+    top: 200px
+}
+.team-inner-poster span {
+    display: block
+}
+.team-inner-poster .h-m {
+    font-size: 56px;
+    font-family: "AvenirLTStd-Heavy"
+}
+.team-inner-poster .h-s {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 30px
+}
+.team-inner-poster .t {
+    font-family: "AvenirLTStd-Book";
+    font-size: 21px;
+    margin-top: 10px;
+    margin-bottom: 50px
+}
+.carousel-appl {
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 60px auto
+}
+.carousel-appl .carousel {
+    min-height: 330px
+}
+.carousel-appl img {
+    margin: 0 auto 30px auto;
+    max-width: 262px
+}
+.carousel-caption {
+    font-size: 14px
+}
+.carousel-control {
+    position: absolute;
+    width: 31px;
+    height: 53px;
+    top: 50%;
+    margin-top: -56px;
+    background-size: 31px 53px;
+    cursor: pointer
+}
+.carousel-control.right {
+    background-image: url(../img/content/team/arrow_right@2x.png);
+    right: -50px
+}
+.carousel-control.left {
+    background-image: url(../img/content/team/arrow_left@2x.png);
+    left: -50px
+}
+.team-build p {
+    margin-top: 25px
+}
+.contentPage.jobs {
+    height: 100%;
+    min-height: 100%
+}
+.jobs-center-hero {
+    position: absolute;
+    top: 50%;
+    margin-top: -125px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px
+}
+.jobs-hero-mask {
+    width: 100%;
+    height: 10%;
+    background: url("../img/content/howitworks/section-1/mask@2x.png") no-repeat top center;
+    background-size: 2500px 23px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 23px
+}
+.jobs-hero-mask>a {
+    display: block;
+    position: absolute;
+    top: 23px;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #d44200;
+    font-family: "AvenirLTStd-Medium";
+    text-align: center;
+    text-decoration: none;
+    padding-top: 16px
+}
+.jobsContent {
+    padding: 60px 0;
+    color: #333
+}
+.jobsContent h2 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 30px 0
+}
+.jobsContent.invert {
+    background: #1684a8;
+    color: #FFF;
+    text-align: center
+}
+.jobsContent.invert p {
+    font-size: 20px;
+    margin: 0 0 20px 0
+}
+.jobsContent.invert a.hugeEmail {
+    text-decoration: none;
+    color: #0b303c;
+    font-size: 30px;
+    font-family: "AvenirLTStd-Heavy";
+    transition: .2s all linear
+}
+.jobsContent.invert a.hugeEmail:hover {
+    opacity: .5
+}
+.jobsContent.invert a.button {
+    width: 320px;
+    margin: 30px auto 0 auto
+}
+.jobsContent.invert .linkedinlink {
+    display: block;
+    margin: 20px 0 0 0;
+    color: #FFF;
+    text-decoration: none;
+    font-family: "AvenirLTStd-Light";
+    font-size: 16px
+}
+.jobsContent.invert .linkedinlink>span {
+    font-family: "AvenirLTStd-Heavy"
+}
+.jobsContent .left,
+.jobsContent .right {
+    float: left;
+    width: 50%
+}
+.jobsContent .left h2,
+.jobsContent .right h2 {
+    text-align: left;
+    margin-bottom: 5px
+}
+.jobsContent .left p,
+.jobsContent .right p {
+    margin: 0 0 30px 0
+}
+.jobsContent .left .linkedinlink,
+.jobsContent .right .linkedinlink {
+    display: block;
+    margin-bottom: 10px;
+    color: #0583aa;
+    text-decoration: none
+}
+.jobsContent .left .linkedinlink>span,
+.jobsContent .right .linkedinlink>span {
+    font-family: "AvenirLTStd-Heavy"
+}
+.jobsContent .left .linkedinlink:hover,
+.jobsContent .right .linkedinlink:hover {
+    text-decoration: underline
+}
+.jobsContent .left {
+    padding-right: 110px
+}
+.jobsContent blockquote {
+    font-size: 30px;
+    margin: 0;
+    position: relative
+}
+.jobsContent blockquote:before,
+.jobsContent blockquote:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px
+}
+.jobsContent blockquote:before {
+    background: url("../img/content/jobs/quote-open.svg") no-repeat center center;
+    top: -5px;
+    left: -40px
+}
+.jobsContent blockquote:after {
+    background: url("../img/content/jobs/quote-close.svg") no-repeat center center;
+    bottom: 15px;
+    right: 40px
+}
+.jobsContent .subline {
+    display: block;
+    text-align: center;
+    margin: -25px 0 40px 0;
+    font-size: 30px
+}
+.jobsContent.listings {
+    background: #f9f9f9;
+    padding: 60px 0 35px 0
+}
+.jobsContent.listings .subline {
+    margin: 0 0 30px 0
+}
+.jobsContent.listings .intro {
+    max-width: 500px;
+    margin: 0 auto 60px auto;
+    text-align: center
+}
+.jobsContent .fallback {
+    width: 320px;
+    margin: 0 auto 20px auto
+}
+.jobsContent .grid .clear {
+    display: block;
+    clear: both
+}
+.jobsContent .grid>div {
+    background: #FFF;
+    float: left;
+    width: 435px;
+    height: 334px;
+    margin: 0 30px 30px 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03), 0px 1px 1px 0 rgba(0, 0, 0, 0.05), 0px 2px 5px 0 rgba(0, 0, 0, 0.05);
+    border-top: 2px solid transparent;
+    padding: 15px 25px 25px 25px;
+    position: relative
+}
+.jobsContent .grid>div:nth-child(2n) {
+    margin-right: 0
+}
+.jobsContent .grid>div.cat-1 {
+    border-color: #00a5e6
+}
+.jobsContent .grid>div.cat-1 .read-more,
+.jobsContent .grid>div.cat-1 .category {
+    color: #00a5e6
+}
+.jobsContent .grid>div.cat-1 .read-more:hover,
+.jobsContent .grid>div.cat-1 .category:hover {
+    color: #008fc7
+}
+.jobsContent .grid>div.cat-1 .apply {
+    background: #00a5e6
+}
+.jobsContent .grid>div.cat-1 .apply:hover {
+    background: #008fc7
+}
+.jobsContent .grid>div.cat-2 {
+    border-color: #7fc20a
+}
+.jobsContent .grid>div.cat-2 .read-more,
+.jobsContent .grid>div.cat-2 .category {
+    color: #7fc20a
+}
+.jobsContent .grid>div.cat-2 .read-more:hover,
+.jobsContent .grid>div.cat-2 .category:hover {
+    color: #75b604
+}
+.jobsContent .grid>div.cat-2 .apply {
+    background: #7fc20a
+}
+.jobsContent .grid>div.cat-2 .apply:hover {
+    background: #75b604
+}
+.jobsContent .grid>div.cat-3 {
+    border-color: #f5a811
+}
+.jobsContent .grid>div.cat-3 .read-more,
+.jobsContent .grid>div.cat-3 .category {
+    color: #f5a811
+}
+.jobsContent .grid>div.cat-3 .read-more:hover,
+.jobsContent .grid>div.cat-3 .category:hover {
+    color: #e59700
+}
+.jobsContent .grid>div.cat-3 .apply {
+    background: #f5a811
+}
+.jobsContent .grid>div.cat-3 .apply:hover {
+    background: #e59700
+}
+.jobsContent .grid>div.cat-4 {
+    border-color: #ec2c8f
+}
+.jobsContent .grid>div.cat-4 .read-more,
+.jobsContent .grid>div.cat-4 .category {
+    color: #ec2c8f
+}
+.jobsContent .grid>div.cat-4 .read-more:hover,
+.jobsContent .grid>div.cat-4 .category:hover {
+    color: #d5197a
+}
+.jobsContent .grid>div.cat-4 .apply {
+    background: #ec2c8f
+}
+.jobsContent .grid>div.cat-4 .apply:hover {
+    background: #d5197a
+}
+.jobsContent .grid>div .apply {
+    border-radius: 3px;
+    transition: .2s all ease;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    padding: 0 8px;
+    color: #FFF;
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 12px;
+    position: absolute;
+    right: 25px;
+    top: 20px
+}
+.jobsContent .grid>div .category {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: "AvenirLTStd-Heavy";
+    letter-spacing: 1.4px;
+    display: block;
+    margin-bottom: 25px
+}
+.jobsContent .grid>div .title {
+    font-size: 18px;
+    display: block;
+    margin: 0 0 5px 0;
+    max-width: 75%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+.jobsContent .grid>div .location {
+    font-size: 14px;
+    color: #9b9b9b;
+    display: block;
+    margin: 0 0 15px 0
+}
+.jobsContent .grid>div a {
+    text-decoration: none
+}
+.jobsContent .grid>div .read-more {
+    font-family: "AvenirLTStd-Medium";
+    font-size: 14px;
+    margin-top: 10px;
+    display: block
+}
+.jobsContent .grid>div .description {
+    font-size: 14px;
+    color: #6c6c6c;
+    line-height: 1.6em;
+    position: relative;
+    overflow: hidden;
+    max-height: 203px
+}
+.jobsContent .grid>div .description:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    content: ""
+}
+.glassdoor-link {
+    display: inline-block;
+    text-indent: -9999em;
+    width: 160px;
+    height: 47px;
+    background: url("../img/content/jobs/glassdoor-link.png") no-repeat;
+    background-size: 160px 47px;
+    margin-top: 10px
+}
+#jobsCollage {
+    width: 100%;
+    display: block;
+    max-width: 1200px;
+    margin: -30px auto 0 auto
+}
+.perks ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0
+}
+.perks ul li {
+    width: 33.333%;
+    float: left;
+    margin-bottom: 70px;
+    padding-top: 60px;
+    background: no-repeat center top;
+    font-size: 16px;
+    height: 110px
+}
+.perks ul li>span {
+    font-size: 12px;
+    display: block
+}
+.perks ul li.health {
+    background-image: url("../img/content/jobs/health.svg")
+}
+.perks ul li.lunch {
+    background-image: url("../img/content/jobs/lunch.svg")
+}
+.perks ul li.gym {
+    background-image: url("../img/content/jobs/gym.svg")
+}
+.perks ul li.laundry {
+    background-image: url("../img/content/jobs/laundry.svg")
+}
+.perks ul li.office {
+    background-image: url("../img/content/jobs/office.svg")
+}
+.perks ul li.transport {
+    background-image: url("../img/content/jobs/transport.svg")
+}
+.perks ul li.vacation {
+    background-image: url("../img/content/jobs/vacation.svg")
+}
+.perks ul li.stock {
+    background-image: url("../img/content/jobs/stock.svg")
+}
+.perks ul li.fun {
+    background-image: url("../img/content/jobs/fun.svg")
+}
+.perks ul li.pad-max {
+    padding: 60px 70px 0 70px
+}
+.perks ul li.pad-high {
+    padding: 60px 60px 0 60px
+}
+.perks ul li.pad-mid {
+    padding: 60px 50px 0 50px
+}
+.perks ul li.pad-min {
+    padding: 60px 20px 0 20px
+}
+.perks ul li.last {
+    margin-bottom: 0
+}
+.bptw-logo {
+    display: block;
+    margin: 0 auto 90px auto
+}
+#howto-1 .coverBackground {
+    background-image: url("../img/content/howitworks/section-1/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 90%;
+    width: 100%
+}
+#howto-2 {
+    background: #fff
+}
+#howto-3 {
+    background: #fff
+}
+#howto-4,
+#howto-25 {
+    background: #f0f0f0
+}
+#howto-5 {
+    background: #fff
+}
+#howto-6 {
+    background: #fff
+}
+#howto-7 {
+    background: #fff
+}
+#howto-1 .wrap {
+    height: 100%;
+    padding-top: 60px
+}
+#howto-1 .howHeader {
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 260px
+}
+#howto-1 h1 {
+    font-family: "AvenirLTStd-Medium";
+    font-size: 24px;
+    margin: 0 0 40px
+}
+#howto-1 span {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 40px;
+    margin: 0 0 40px;
+    display: block
+}
+#howto-1 a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px
+}
+#howto-1 .mask {
+    width: 100%;
+    height: 23px;
+    background: url("../img/content/howitworks/section-1/mask@2x.png") no-repeat top center;
+    background-size: 2500px 23px;
+    position: absolute;
+    bottom: 10%
+}
+#howto-1 .mask-scroller {
+    font-size: 13px;
+    color: #d44200;
+    font-family: "AvenirLTStd-Medium";
+    text-align: center;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0
+}
+#howto-2 .contentSmart {
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 450px
+}
+#howto-2 h2 {
+    font-size: 30px;
+    font-family: "AvenirLTStd-Light";
+    text-transform: none;
+    padding: 0 30px;
+    margin: 0 0 70px 0
+}
+#howto-2 .process {
+    margin-bottom: 60px
+}
+#howto-2 .process .step {
+    float: left;
+    width: 25%;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    position: relative
+}
+#howto-2 .process .step:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    background: url("../img/content/howitworks/section-2/how_diagram_arrow.svg") no-repeat;
+    right: -10px;
+    bottom: 5px
+}
+#howto-2 .process .step.integrate {
+    background-image: url("../img/content/howitworks/section-2/how_diagram_1.svg");
+    background-position: center 20px
+}
+#howto-2 .process .step.learn {
+    background-image: url("../img/content/howitworks/section-2/how_diagram_2.svg");
+    background-position: center 10px
+}
+#howto-2 .process .step.recommend {
+    background-image: url("../img/content/howitworks/section-2/how_diagram_3.svg");
+    background-position: center 10px
+}
+#howto-2 .process .step.engage {
+    background-image: url("../img/content/howitworks/section-2/how_diagram_4.svg");
+    background-position: center 20px
+}
+#howto-2 .process .step.engage:after {
+    display: none
+}
+#howto-2 .process .step span {
+    font-size: 13px;
+    display: block
+}
+#howto-2 .process .step .pre {
+    font-family: "AvenirLTStd-Book";
+    margin-bottom: 2px
+}
+#howto-2 .process .step .sub {
+    font-family: "AvenirLTStd-Black";
+    text-transform: uppercase
+}
+#howto-2 .getstarted {
+    color: #0583aa;
+    font-size: 20px;
+    text-decoration: none
+}
+.howitworks.launch {
+    text-align: center
+}
+.howitworks.launch:after {
+    width: 2px;
+    height: 800px;
+    background: #0583aa;
+    content: "";
+    left: 50%;
+    margin-left: -1px;
+    top: 540px;
+    position: absolute
+}
+.howitworks.launch .introduction,
+.howitworks.launch .introductionSub,
+.howitworks.launch .lisaSub {
+    display: block
+}
+.howitworks.launch .introduction {
+    font-family: "HomemadeApplePro";
+    font-size: 26px;
+    margin-bottom: 10px
+}
+.howitworks.launch .introductionSub {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 25px
+}
+.howitworks.launch h3 {
+    margin-bottom: 10px!important
+}
+.howitworks.launch .lisaSub {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 320px;
+    margin: 0 auto
+}
+.howitworks.launch .lisaSub strong {
+    color: #000
+}
+.howitworks.launch .number {
+    color: #FFF;
+    font-family: "AvenirLTStd-Black";
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    line-height: 50px;
+    background: #0583aa;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 5px;
+    z-index: 2
+}
+.howitworks.launch .imageLine {
+    margin: 0 auto 20px auto;
+    max-width: 360px;
+    position: relative
+}
+.howitworks.launch img {
+    margin-left: 102px
+}
+.contentSmart.howitworks {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+    top: 0;
+    bottom: 0
+}
+.contentSmart.howitworks.first {
+    top: 15%
+}
+.contentSmart.howitworks .left {
+    position: absolute;
+    width: 42%;
+    left: 0;
+    right: 58%;
+    top: 0;
+    bottom: 0;
+    margin: auto
+}
+.contentSmart.howitworks .middle {
+    float: left;
+    width: 20%
+}
+.contentSmart.howitworks .middle.line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10%
+}
+.contentSmart.howitworks .middle.line:after {
+    width: 2px;
+    height: 100%;
+    background: #0583aa;
+    content: "";
+    left: 50%;
+    margin-left: -1px;
+    position: absolute
+}
+.contentSmart.howitworks .middle.line .number {
+    color: #FFF;
+    font-family: "AvenirLTStd-Black";
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    line-height: 50px;
+    background: #0583aa;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 2
+}
+.contentSmart.howitworks .right {
+    position: absolute;
+    margin: auto;
+    width: 42%;
+    left: 58%;
+    right: 0;
+    bottom: 0;
+    top: 0
+}
+.contentSmart.howitworks .pre {
+    font-size: 16px;
+    color: #777;
+    display: block;
+    margin-bottom: 10px
+}
+.contentSmart.howitworks h3 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 30px;
+    margin: 0;
+    line-height: 1.1em
+}
+.contentSmart.howitworks .sub {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block
+}
+.contentSmart.howitworks p {
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0
+}
+.contentSmart.howitworks .x100 {
+    height: 100px
+}
+.contentSmart.howitworks .x200 {
+    height: 200px
+}
+.contentSmart.howitworks .x250 {
+    height: 250px
+}
+.contentSmart.howitworks .x300 {
+    height: 300px
+}
+.contentSmart.howitworks .x350 {
+    height: 350px
+}
+.contentSmart.howitworks .x400 {
+    height: 400px
+}
+.contentSmart.howitworks .x450 {
+    height: 450px
+}
+.contentSmart.howitworks .x500 {
+    height: 500px
+}
+.contentSmart.howitworks .left img,
+.contentSmart.howitworks .right img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%
+}
+#howto-6 .contentSmart {
+    text-align: center;
+    height: 540px;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto
+}
+#howto-6 .contentSmart:after {
+    width: 2px;
+    height: 100%;
+    background: #0583aa;
+    content: "";
+    left: 50%;
+    margin-left: -1px;
+    position: absolute;
+    top: -540px
+}
+#howto-6 .contentSmart img {
+    margin: 0 auto 30px auto;
+    display: block
+}
+#howto-6 .contentSmart h3 {
+    font-size: 30px;
+    margin: 0 auto 35px auto;
+    max-width: 640px
+}
+#howto-6 .contentSmart .endText {
+    font-size: 18px;
+    color: #555;
+    display: block;
+    margin: 0 auto 40px auto;
+    max-width: 320px
+}
+#howto-6 .contentSmart .endText>span {
+    background: url("../img/content/howitworks/section-6/yellowtag.svg") no-repeat center center;
+    display: inline-block;
+    font-family: "AvenirLTStd-Medium";
+    padding: 0 5px 0 11px
+}
+#howto-6 .contentSmart .point {
+    float: left;
+    width: 25%;
+    padding: 35px 25px 0 25px;
+    background: url("../img/content/howitworks/section-6/check.svg") no-repeat center top
+}
+#howto-6 .contentSmart .point h4 {
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0
+}
+#howto-6 .contentSmart .point p {
+    margin: 0;
+    font-size: 13px
+}
+#howto-7 .endHow {
+    height: 70%;
+    text-align: center
+}
+#howto-7 .endHow>.wrap {
+    position: absolute;
+    margin: auto;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    height: 340px
+}
+#howto-7 .endHow h3.head {
+    margin: 0;
+    font-size: 30px
+}
+#howto-7 .endHow .sub {
+    font-size: 18px;
+    display: block;
+    color: #555;
+    margin-bottom: 30px
+}
+#howto-7 .endHow .button {
+    width: 280px;
+    margin: 0 auto 70px auto
+}
+#howto-7 .scrollFooter {
+    height: 30%
+}
+.video-play-icon-link {
+    font-family: "AvenirLTStd-Medium"!important;
+    display: inline-block;
+    margin: 0 auto;
+    background: url("../img/play-icon-big.svg") no-repeat center top;
+    padding-top: 60px!important;
+    cursor: pointer;
+    transition: .2s all ease;
+    font-size: 18px!important;
+    color: #FFF;
+    text-align: center
+}
+.video-play-icon-link:hover {
+    opacity: .8
+}
+#video-overlay,
+.vimeo-lay {
+    background: rgba(0, 0, 0, 0.8);
+    background: -moz-radial-gradient(center, ellipse cover, #000 0, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #000), color-stop(100%, rgba(0, 0, 0, 0.8)));
+    background: -webkit-radial-gradient(center, ellipse cover, #000 0, rgba(0, 0, 0, 0.8) 100%);
+    background: -o-radial-gradient(center, ellipse cover, #000 0, rgba(0, 0, 0, 0.8) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #000 0, rgba(0, 0, 0, 0.8) 100%);
+    background: radial-gradient(ellipse at center, #000 0, rgba(0, 0, 0, 0.8) 100%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 80px 15%;
+    display: none;
+    z-index: 999999
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+#video-close,
+.vimeo-close {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: url("../img/close-video.svg") no-repeat center center;
+    cursor: pointer;
+    text-indent: -999em;
+    opacity: .8;
+    transition: .2s all ease
+}
+#video-close:hover,
+.vimeo-close:hover {
+    opacity: 1
+}
+#watch-next {
+    cursor: pointer;
+    display: block;
+    width: 300px;
+    padding: 10px 30px;
+    margin: 40% auto 0 auto
+}
+@media screen and (min-width: 1600px) and (min-height: 800px) {
+    #video-overlay,
+    .vimeo-lay {
+        padding: 100px 20%
+    }
+}
+@media screen and (max-width: 960px) {
+    #video-overlay,
+    .vimeo-lay {
+        padding: 60px 10%
+    }
+}
+@media screen and (max-width: 480px) {
+    #video-overlay,
+    .vimeo-lay {
+        padding: 60px 2%
+    }
+}
+.testimonial-badge {
+    line-height: 1.2em;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-family: "AvenirLTStd-Light";
+    font-size: 16px;
+    background: rgba(5, 131, 170, 0.5);
+    position: absolute;
+    bottom: 100px;
+    right: -200px;
+    border-radius: 3px 3px 0 0;
+    padding: 15px 15px 12px 50px;
+    width: 180px;
+    display: none;
+    transition: .2s all ease
+}
+.testimonial-badge:hover {
+    background: rgba(5, 131, 170, 0.7);
+    color: #FFF
+}
+.testimonial-badge:before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    width: 24px;
+    height: 18px;
+    background: url("../img/content/testimonials/quotes.svg") no-repeat -24px -49px
+}
+.testimonial-badge:after {
+    content: "";
+    position: absolute;
+    bottom: 11px;
+    left: 104px;
+    width: 18px;
+    height: 18px;
+    background: url("../img/content/testimonials/popup-tab-arrow.svg") no-repeat
+}
+@media(min-width:1350px) {
+    .testimonial-badge {
+        display: block
+    }
+}
+.contentPage .hero .testo-center-hero h1 {
+    margin-top: 60px
+}
+.testo-center-hero {
+    position: absolute;
+    top: 50%;
+    margin-top: -105px;
+    left: 50%;
+    margin-left: -380px;
+    width: 760px
+}
+.quote-head {
+    position: relative
+}
+.quote-head:before,
+.quote-head:after {
+    content: "";
+    background-image: url("../img/content/testimonials/quotes.svg");
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    display: none
+}
+.quote-head:before {
+    background-position: -24px -49px;
+    -webkit-transform: scale(6);
+    transform: scale(6);
+    left: -110px;
+    top: -10px
+}
+.quote-head:after {
+    background-position: 2px -68px;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+    right: -70px;
+    bottom: 30px
+}
+@media(min-width:1110px) {
+    .quote-head:before, .quote-head:after {
+        display: block
+    }
+}
+.t_spline {
+    width: 100%;
+    padding: 10px 0
+}
+.t_spline.white {
+    background: #FFF
+}
+.t_spline.gray {
+    background: linear-gradient(to bottom, #cacaca 0, #fff 60%, #dedede 100%)
+}
+.t_spline blockquote {
+    margin: 0;
+    padding: 0 0 0 35px;
+    font-family: "AvenirLTStd-Light"
+}
+.t_spline blockquote img {
+    margin-bottom: 20px;
+    display: block
+}
+.t_spline blockquote p {
+    margin: 15px 0;
+    font-size: 16px;
+    position: relative;
+    line-height: 1.5em
+}
+.t_spline blockquote p:before,
+.t_spline blockquote p:after {
+    content: "";
+    background-image: url("../img/content/testimonials/quotes.svg");
+    width: 24px;
+    height: 18px
+}
+.t_spline blockquote p:before {
+    background-position: -24px 0;
+    left: -32px;
+    top: -5px;
+    position: absolute
+}
+.t_spline blockquote p:after {
+    background-position: 2px -17px;
+    left: 6px;
+    bottom: 5px;
+    position: relative;
+    display: inline-block
+}
+.t_spline blockquote cite {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: normal
+}
+.t_spline blockquote cite>span {
+    font-family: "AvenirLTStd-Heavy";
+    display: block
+}
+.ft-quote {
+    display: table;
+    margin: 70px auto
+}
+.ft-quote>div {
+    width: 50%;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative
+}
+.ft-quote>div>img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%
+}
+.ft-quote .left {
+    padding-right: 40px
+}
+.ft-quote .right {
+    padding-left: 40px
+}
+.tr-quote {
+    margin: 70px auto
+}
+.tr-quote>section {
+    width: 33.3333%;
+    float: left;
+    padding: 0 15px
+}
+.tr-quote>section.first {
+    padding: 0 30px 0 0
+}
+.tr-quote>section.last {
+    padding: 0 0 0 30px
+}
+.templateContent {
+    padding: 50px 100px
+}
+.templateContent h3,
+.templateContent h4 {
+    margin: 0 0 10px 0;
+    font-family: "AvenirLTStd-Heavy";
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase
+}
+.templateContent h3 {
+    text-align: center
+}
+.templateContent h4 {
+    font-size: 12px
+}
+.templateContent p {
+    font-size: 18px;
+    color: #333;
+    font-family: "AvenirLTStd-Light";
+    text-align: center;
+    margin: 10px 0
+}
+.templateContent p.marg {
+    margin-bottom: 40px
+}
+.templateContent p.limited {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 570px
+}
+.templateContent hr {
+    border: 0;
+    border-bottom: 1px solid #e3e3e3;
+    margin: 40px 0
+}
+.templateContent .col {
+    float: left
+}
+.templateContent .col.left {
+    width: 35%
+}
+.templateContent .col.right {
+    width: 65%
+}
+.templateContent .col.sideby {
+    width: 50%
+}
+.templateContent ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+.templateContent ul.checklist {
+    list-style-image: url(../img/content/templates/checkmark.svg);
+    margin-left: 15px
+}
+.templateContent ul.checklist li {
+    padding-left: 2px
+}
+.templateContent ul li {
+    font-size: 14px;
+    font-family: "AvenirLTStd-Light";
+    margin-bottom: 4px;
+    color: #444
+}
+.templateContent .video-player {
+    margin: 40px auto;
+    width: 465px;
+    height: 225px;
+    position: relative
+}
+.templateContent .video-player img {
+    max-width: 100%
+}
+.templateContent video {
+    max-width: 340px;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    cursor: pointer
+}
+.templateContent span.size {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    font-family: "AvenirLTStd-Light";
+    color: #444;
+    margin-bottom: 30px
+}
+.templateContent .sideby img {
+    display: block;
+    margin: 0 auto
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-devicepixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx) {
+    #home-1 {
+        background-image: url("../img/content/home/section-1/background@2x.jpg")
+    }
+    #introAnimation div {
+        background: url("../img/content/home/section-2/animation-sprite@2x.png") no-repeat;
+        background-size: 370px 1810px
+    }
+    #home-3 {
+        background-image: url("../img/content/home/section-3/background@2x.jpg")
+    }
+    #home-5 {
+        background-image: url("../img/content/home/section-5/background@2x.jpg")
+    }
+    #home-7 {
+        background-image: url("../img/content/home/section-7/background@2x.jpg")
+    }
+    .contentPage .hero.contactHero {
+        background-image: url("../img/content/contact/hero@2x.jpg")
+    }
+    .contentPage .hero.blogHero {
+        background-image: url("../img/content/blog/hero@2x.jpg")
+    }
+    .contentPage .hero.pressHero {
+        background-image: url("../img/content/press/hero@2x.jpg")
+    }
+    .contentPage .hero.aboutHero {
+        background-image: url("../img/content/about/hero@2x.jpg")
+    }
+    .contentPage .hero.teamHero {
+        background-image: url("../img/content/team/hero@2x.jpg")
+    }
+    .contentPage .hero.jobsHero {
+        background-image: url("../img/content/jobs/hero@2x.jpg")
+    }
+    #advertisers-1 {
+        background-image: url("../img/content/applovin_advertisers/section-1/background@2x.jpg")
+    }
+    .logoSlider .logoBar .logos {
+        background: url("../img/content/applovin_advertisers/section-7/logobar@2x.png") repeat-x;
+        background-size: 1400px 70px
+    }
+    #developers-1 {
+        background-image: url("../img/content/developers/section-1/background@2x.jpg")
+    }
+    #developers-5 #boxSupport {
+        background: url("../img/content/developers/section-5/box@2x.png") no-repeat;
+        background-size: 200px 245px
+    }
+    #advertisers-5 #reportFile {
+        background: url("../img/content/applovin_advertisers/section-5/report@2x.png") no-repeat;
+        background-size: 210px 275px
+    }
+    .formsPage .hero.loginHero {
+        background-image: url("../img/content/login/background@2x.jpg")
+    }
+    .formsPage .hero.registerHero {
+        background: #1684a8
+    }
+}
+.clear {
+    clear: both
+}
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%
+}
+.hidden {
+    display: none!important;
+    visibility: hidden
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+.invalidField {
+    -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, 0.3)!important;
+    -moz-box-shadow: 0 0 5px rgba(255, 0, 0, 0.3)!important;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3)!important;
+    border: 1px solid #f00!important
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
+}
+.invisible {
+    visibility: hidden
+}
+.BlurLoader {
+    cursor: progress;
+    position: relative
+}
+.BlurLoader:before {
+    z-index: 998;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9)
+}
+.BlurLoader:after {
+    z-index: 999;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/assets/images/loader1.gif) no-repeat center;
+    background-size: 30px 30px
+}
+.red {
+    color: red!important
+}
+@media print {
+    * {
+        background: transparent!important;
+        color: #000!important;
+        box-shadow: none!important;
+        text-shadow: none!important
+    }
+    a,
+    a:visited {
+        text-decoration: underline
+    }
+    a[href]:after {
+        content: " (" attr(href) ")"
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")"
+    }
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: ""
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid
+    }
+    thead {
+        display: table-header-group
+    }
+    tr,
+    img {
+        page-break-inside: avoid
+    }
+    img {
+        max-width: 100%!important
+    }
+    @page {
+        margin: .5cm
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3
+    }
+    h2,
+    h3 {
+        page-break-after: avoid
+    }
+}
+.full {
+    width: 100%;
+    height: 100%
+}
+.display-block {
+    display: block
+}
+.display-none {
+    display: none
+}
+.display-inline {
+    display: inline
+}
+.display-inline-block {
+    display: inline-block
+}
+.display-inline-table {
+    display: inline-table
+}
+.f-l {
+    float: left
+}
+.f-r {
+    float: right
+}
+.f-n {
+    float: none
+}
+.clear {
+    clear: both
+}
+.text-align-right {
+    text-align: right
+}
+.text-align-left {
+    text-align: left
+}
+.text-align-center {
+    text-align: center
+}
+.font-weight-bold {
+    font-weight: bold
+}
+.padding-0 {
+    padding: 0
+}
+.padding-10 {
+    padding: 10px
+}
+.padding-t-10 {
+    padding-top: 10px
+}
+.padding-b-10 {
+    padding-bottom: 10px
+}
+.padding-l-20 {
+    padding-left: 20px
+}
+.padding-r-20 {
+    padding-right: 20px
+}
+.margin-0 {
+    margin: 0
+}
+.margin-l-10 {
+    margin-left: 10px
+}
+.margin-l-15 {
+    margin-left: 15px
+}
+.margin-l-20 {
+    margin-left: 20px
+}
+.margin-l-25 {
+    margin-left: 25px
+}
+.margin-l-40 {
+    margin-left: 40px
+}
+.margin-r-10 {
+    margin-right: 10px
+}
+.margin-r-15 {
+    margin-right: 15px
+}
+.margin-r-20 {
+    margin-right: 20px
+}
+.margin-t-0 {
+    margin-top: 0
+}
+.margin-t-10 {
+    margin-top: 10px
+}
+.margin-t-20 {
+    margin-top: 20px
+}
+.margin-t-30 {
+    margin-top: 30px
+}
+.margin-t-50 {
+    margin-top: 50px
+}
+.margin-b-5 {
+    margin-bottom: 5px
+}
+.margin-b-10 {
+    margin-bottom: 10px
+}
+.margin-b-15 {
+    margin-bottom: 15px
+}
+.margin-b-20 {
+    margin-bottom: 20px!important
+}
+.margin-b-30 {
+    margin-bottom: 30px
+}
