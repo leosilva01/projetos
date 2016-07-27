@@ -128,25 +128,6 @@ footer {
 	vertical-align: bottom;
 }
 
-.dashboard-footer {
-
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   background:#999;
-
-}
-
-.dashboard-footer p {
-
-font-family: 'SF-Regular', sans-serif;
-font-size: 12px;
-color: #ECECEC;
-
-}
-
 .nav-bar {
   position: fixed;
   top: 0;
