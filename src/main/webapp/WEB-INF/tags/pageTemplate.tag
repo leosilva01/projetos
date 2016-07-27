@@ -13,7 +13,9 @@
 	<c:url value="/resources" var="cssPath"/>
 	
 	<link rel="stylesheet" href="${cssPath}/css/bootstrap.min.css">
-	
+
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
 	<script src="${cssPath}/js/jquery-1.9.1.js"></script>
 	
 	<script src="${cssPath}/js/bootstrap.min.js"> 	</script>
