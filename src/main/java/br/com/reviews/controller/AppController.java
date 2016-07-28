@@ -54,8 +54,7 @@ public class AppController {
 
 		app.setUsuario(usuario);
 		
-		//TODO fazer uma classe de validação
-		if(!( usuario.getApps().size() >= 2 )){
+		if(!limiteApps(usuario)){
 			
 			appDao.salva(app);
 			
@@ -70,6 +69,11 @@ public class AppController {
 		return new ModelAndView("redirect:/index1");
 		
 		
+	}
+
+	private boolean limiteApps(Usuario usuario) {
+
+		return usuario.getApps().size() >= 2;
 	}
 
 	
