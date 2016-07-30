@@ -10,9 +10,7 @@
 	<center>
 		<p style="color: #ECECEC">
 			Mobile Reviews is a Registred Trademark of Mobile Reviews Inc. All
-			rights reserved.<a href="${s:mvcUrl('AC#formApp').build() }">Terms
-				of Use</a> | <a href="${s:mvcUrl('AC#formApp').build() }">Privacy
-				Policy</a>
+			rights reserved.<a href="${s:mvcUrl('AC#formApp').build() }">Terms of Use</a> | <a href="${s:mvcUrl('AC#formApp').build() }">Privacy Policy</a>
 		</p>
 	</center>
 </footer>

@@ -4,7 +4,7 @@
 
 	<security:authentication property="principal" var="usuarioLogado"/>
 	
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar-default navbar-static-top">
 	  <div class="container-fluid">
 	  
 	    <div class="navbar-header active">
@@ -16,24 +16,30 @@
 	    
 	    <security:authorize access="isAuthenticated()" >
 	    	
-			<li><a href="${s:mvcUrl('UC#detalhe').build() }"><i class="fa fa-plus fa-fw fa-lg" aria-hidden="true" style="color:#00B16A"></i>
+			<li><a href="${s:mvcUrl('UC#detalhe').build() }">
+			<i class="fa fa-cog fa-fw fa-lg" aria-hidden="true"></i>
 				<s:message code="menu.minhaPagina"/></a></li>
 	    
 	    	<li><a href="${s:mvcUrl('AC#listar').build() }">
+	    	<i class="fa fa-mobile fa-fw fa-lg" aria-hidden="true"></i>
 				<s:message code="menu.listarMeusApps"/></a></li>
 
 	    	<li><a href="${s:mvcUrl('AC#formApp').build() }">
+	    	<i class="fa fa-plus fa-fw fa-lg" aria-hidden="true" style="color:#00B16A"></i>
 				<s:message code="menu.addApp"/></a></li>
 
 	    	<li><a href="${s:mvcUrl('UC#listar').build() }">
+	    	<i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i>
 				<s:message code="menu.listarUsuarios"/></a></li>
 
 	    	<li><a href="${s:mvcUrl('RC#review').build() }">
+	    	<i class="fa fa-star fa-fw fa-lg" aria-hidden="true"></i>
 				<s:message code="menu.listarAppParaReview"/></a></li>
 			
 	    </security:authorize>
 	      
 			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="fa fa-globe fa-fw fa-lg" aria-hidden="true"></i>
 								<s:message code="menu.idioma"/><span class="caret"></span></a>
 				
 				<ul class="dropdown-menu">
