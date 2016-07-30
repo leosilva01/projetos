@@ -5,7 +5,7 @@
 
 <tags:pageTemplate titulo="Apps de ${usuarioLogin}" >
 
-	<h3><s:message code="listarApp.titulo" arguments="${usuarioLogin}"/></h3>
+	<h3 style="padding-left:30px;"><s:message code="listarApp.titulo" arguments="${usuarioLogin}"/></h3>
 	
 	<table class="table table-hover">
 		<thead>
@@ -20,7 +20,7 @@
 		<tbody>
 			<c:forEach items="${apps}" var="app" varStatus="numero">
 				<tr>
-					<td>${numero.index}</td>
+					<td style="padding-left:30px;">${numero.index}</td>
 					<td>${app.nome }</td>
 					<td>${app.link }</td>
 					<td>${app.qtdReviews }</td>
