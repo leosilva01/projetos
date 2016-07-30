@@ -5,9 +5,10 @@
 
 <tags:pageTemplate titulo="Add App">
 
-	<div class="container col-xs-3" align="center">
+	<br>
+	  <div class="col-xs-4">
 
-		<form:form action="${s:mvcUrl('AC#salva').build() }" method="POST" commandName="app">
+		<form:form action="${s:mvcUrl('AC#salva').build() }" method="POST" commandName="app" style="padding-left:30px; padding-right:30px; col-xs-2; ">
 		
 			<label for="name">
 				<s:message code="formApp.nome"/></label>
@@ -18,9 +19,10 @@
 				<s:message code="formApp.link"/></label>	 
 			<form:errors path="link"/>
 			<form:input path="link" class="form-control" />
-		
-			<div align="center">
-				<form:button class="btn btn-primary">
+			
+			<br>
+			<div align="left">
+				<form:button id="signup-bt">
 					<s:message code="formApp.cadastrar"/></form:button>
 			</div>
 		</form:form>

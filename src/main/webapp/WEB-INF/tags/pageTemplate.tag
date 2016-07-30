@@ -13,6 +13,8 @@
 	<c:url value="/resources" var="cssPath"/>
 	
 	<link rel="stylesheet" href="${cssPath}/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="${cssPath}/css/style.css">
 
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
