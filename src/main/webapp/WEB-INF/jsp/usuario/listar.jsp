@@ -5,7 +5,7 @@
 
 <tags:pageTemplate titulo="Usuários Cadastrados">
 	
-	<h3><s:message code="listarUsuario.titulo"/></h3>
+	<h3 style="padding-left:30px;"><s:message code="listarUsuario.titulo"/></h3>
 	
 	<table class="table table-hover">
 		<thead>
